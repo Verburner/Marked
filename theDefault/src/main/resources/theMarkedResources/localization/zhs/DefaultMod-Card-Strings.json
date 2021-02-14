@@ -1,0 +1,384 @@
+{
+  "theMarked:Strike": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害"
+  },
+  "theMarked:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡"
+  },
+  "theMarked:SoldierOfQuellstein": {
+    "NAME": "奎尔斯坦军",
+    "DESCRIPTION": "获得 !B! 点 格挡 NL themarked:召唤 *艾莉莎之刃"
+  },
+  "theMarked:AlyssasBlade": {
+    "NAME": "艾莉莎之刃",
+    "DESCRIPTION": "造成 !D! 点伤害 ",
+    "EXTENDED_DESCRIPTION": ["NL 给予 !M! 层 虚弱 ", "NL 给予 !theMarked:SecondMagic! 层 themarked:驱逐印记 ", "NL themarked:维持"]
+  },
+  "theMarked:MirrorBlade": {
+    "NAME": "镜像之刃",
+    "DESCRIPTION": "造成 !D! 点伤害 ",
+    "EXTENDED_DESCRIPTION": ["NL 给予 !M! 层 虚弱 ", "NL 给予 !theMarked:SecondMagic! 层 themarked:驱逐印记 ", "NL themarked:维持"]
+  },
+  "theMarked:Riposte": {
+    "NAME": "还击",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 给予1层 易伤 NL 消耗 NL 虚无"
+  },
+  "theMarked:FlawedCopy": {
+    "NAME": "複製之刃",
+    "DESCRIPTION": "造成 !D! 点伤害 "
+  },
+  "theMarked:Circuit": {
+    "NAME": "迴路",
+    "DESCRIPTION": "造成 !D! 点伤害，这张牌会耗费所有 themarked:充能 NL themarked:维持 NL 消耗"
+  },
+  "theMarked:SwordAndMagic": {
+    "NAME": "剑与魔法",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 给予1层 易伤 NL themarked:召唤 *艾莉莎之刃 "
+  },
+  "theMarked:SelfDefenseTraining": {
+    "NAME": "自我防卫",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 获得 !B! 点 格挡 NL 给予 !M! 层 虚弱 "
+  },
+  "theMarked:WastefulAttack": {
+    "NAME": "奢侈打击",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 下回合开始时获得1层 虚弱 "
+  },
+  "theMarked:Pokerface": {
+    "NAME": "扑克脸",
+    "DESCRIPTION": "获得 !B! 点格挡 NL 若你有负面效果，再获得 !B! 点格挡"
+  },
+  "theMarked:HeightenedSenses": {
+    "NAME": "感知敏锐",
+    "DESCRIPTION": "战斗中的每个敌人为你获得 !B! 点格挡"
+  },
+  "theMarked:BanishingWave": {
+    "NAME": "驱逐波动",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害并给予 !M! 层 themarked:驱逐印记 NL 消耗",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害并给予 !M! 层 themarked:驱逐印记"
+  },
+  "theMarked:Seal": {
+    "NAME": "封印",
+    "DESCRIPTION": "给予 !M! 层 themarked:驱逐印记 NL 若触發驱逐，退还一半的耗能并将此牌放回手牌中"
+  },
+  "theMarked:EnhancedHearing": {
+    "NAME": "听觉强化",
+    "DESCRIPTION": "回合结束时，每个意图攻击的敌人使你获得 !M! 点 格挡"
+  },
+  "theMarked:EnhanceMovement": {
+    "NAME": "移动强化",
+    "DESCRIPTION": "耗费 2 点 themarked:充能 才能打出 NL 抽 !M! 张牌 NL 本回合获得 !M! 点 敏捷 NL 消耗",
+    "EXTENDED_DESCRIPTION": ["我的充能不足。"]
+  },
+  "theMarked:Defy": {
+    "NAME": "抗拒",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，若你的血量低于50%，再造成 !D! 点伤害",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，若你的血量低于75%，再造成 !D! 点伤害"
+  },
+  "theMarked:Indomitable": {
+    "NAME": "不屈不挠",
+    "DESCRIPTION": "移除所有负面效果 NL 每移除一个效果获得 [E]"
+  },
+  "theMarked:Heritage": {
+    "NAME": "遗留",
+    "DESCRIPTION": "当你给予 themarked:驱逐印记 ，获得 !M! 点格挡"
+  },
+  "theMarked:StartUp": {
+    "NAME": "暖身",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 获得 !M! 点 敏捷 NL 消耗"
+  },
+  "theMarked:BanishingStrike": {
+    "NAME": "驱逐打击",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 给予 !M! 层 themarked:驱逐印记 NL 目标的每层 themarked:驱逐印记 会增加此卡的伤害值"
+  },
+  "theMarked:ElectricStrings": {
+    "NAME": "雷电之鞭",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，下回合给予所有敌人1层 虚弱"
+  },
+  "theMarked:ChainLightning": {
+    "NAME": "连锁电击",
+    "DESCRIPTION": "对目标造成 !D! 点伤害 NL 对其馀敌人造成一半的伤害"
+  },
+  "theMarked:ResourceFulStrike": {
+    "NAME": "机智打击",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 下回合额外抽 !M! 张牌",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 下回合额外抽 !M! 张牌"
+  },
+  "theMarked:Frustration": {
+    "NAME": "挫败",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 若敌人拥有 themarked:驱逐印记 ，再次造成 !D! 点伤害"
+  },
+  "theMarked:EmpowerWeapon": {
+    "NAME": "强化武器",
+    "DESCRIPTION": "themarked:召唤 *艾莉莎之刃 NL 增加其伤害 !M! 点 NL 消耗",
+    "UPGRADE_DESCRIPTION": "themarked:召唤 *艾莉莎之刃 NL 增加其伤害 !M! 点"
+  },
+  "theMarked:Electrocute": {
+    "NAME": "电击",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 此牌会耗费所有的 themarked:充能 且增伤为 2 倍",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 此牌会耗费所有的 themarked:充能 且增伤为 3 倍"
+  },
+  "theMarked:Static": {
+    "NAME": "静止",
+    "DESCRIPTION": "将一张 *迴路 洗入你的抽牌堆 NL 获得 !B! 点格挡，获得等同于你格挡值一半的 themarked:充能"
+  },
+  "theMarked:Panic": {
+    "NAME": "慌慌张张",
+    "DESCRIPTION": "打出牌堆顶端的 !M! 张牌 NL 消耗"
+  },
+  "theMarked:RepellingDischarge": {
+    "NAME": "逆充能",
+    "DESCRIPTION": "获得 !B! 点 格挡 NL 使用最多 6 点 themarked:充能",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 NL 使用最多 8 点 themarked:充能 NL themarked:维持"
+  },
+  "theMarked:TwofoldDefense": {
+    "NAME": "双重防御",
+    "DESCRIPTION": "获得 !B! 点 格挡两次"
+  },
+  "theMarked:WardOff": {
+    "NAME": "迴避",
+    "DESCRIPTION": "给予 !M! 点 themarked:驱逐印记 NL 获得 !B! 点 格挡 NL 目标的每层 themarked:驱逐印记 会增加此卡的格挡值"
+  },
+  "theMarked:Aftermath": {
+    "NAME": "战果",
+    "DESCRIPTION": "  本回合每打出过 1 张攻击牌，就获得 !M! 点 themarked:充能 NL (打出的攻击牌: !theMarked:SecondMagic! 张)"
+  },
+  "theMarked:KeepCalmAndFight": {
+    "NAME": "沉着应战",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，你身上的每个负面效果使其减少 [E] "
+  },
+  "theMarked:Levitate": {
+    "NAME": "悬浮",
+    "DESCRIPTION": "抽 !M! 张牌 NL 本回合你手牌的技能牌耗能为 0 NL 消耗 "
+  },
+  "theMarked:ShockingTouch": {
+    "NAME": "触电",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 给予自身与目标 !M! 层 易伤"
+  },
+  "theMarked:LightningStrikesTwice": {
+    "NAME": "完美暴风",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 下个回合，再造成 !D! 点伤害 NL themarked:维持"
+  },
+  "theMarked:TunnelVision": {
+    "NAME": "以管窥天",
+    "DESCRIPTION": "造成 !D! 点伤害三次 NL 获得 !M! 层 themarked:愚昧 "
+  },
+  "theMarked:Parkour": {
+    "NAME": "跑酷",
+    "DESCRIPTION": "造成 !D! 点伤害两次 NL 你的每点敏捷使其伤害+1 ",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害两次 NL 你的每点敏捷使其伤害+2 "
+  },
+  "theMarked:ContemptForTheProud": {
+    "NAME": "傲气凌人",
+    "DESCRIPTION": "造成 !D! 点伤害，额外对目标重複造成等同于其正面效果次数的伤害"
+  },
+  "theMarked:CreepingChasm": {
+    "NAME": "裂缝蔓延",
+    "DESCRIPTION": "耗费 !theMarked:SecondMagic! 点 themarked:充能 才能打出 NL 下个回合对所有敌人造成 !M! 点伤害 NL 消耗",
+    "EXTENDED_DESCRIPTION": ["我的充能不足。"]
+  },
+  "theMarked:Convert": {
+    "NAME": "转化",
+    "DESCRIPTION": "抽取等同你的 themarked:充能 数量的卡牌，并耗费等量的 themarked:充能 ，最多抽5张 NL 本回合不能再抽牌",
+    "UPGRADE_DESCRIPTION": "抽取等同你的 themarked:充能 数量的卡牌，最多抽5张 NL 本回合不能再抽牌"
+  },
+  "theMarked:ParalyzingBlade": {
+    "NAME": "麻痺之刃",
+    "DESCRIPTION": "themarked:召唤 *艾莉莎之刃 NL 使其给予 !M! 层 虚弱 NL 获得 !B! 点格挡 NL 消耗"
+  },
+  "theMarked:PowerFlow": {
+    "NAME": "电流",
+    "DESCRIPTION": "themarked:召唤 1 张 *迴路 NL 若 themarked:召唤 的来源为你的牌库，获得 !M! 点 themarked:充能"
+  },
+  "theMarked:ImprovisedWeapon": {
+    "NAME": "创意武器",
+    "DESCRIPTION": "造成 !D! 点伤害",
+    "EXTENDED_DESCRIPTION": [" NL 当这张牌产生时，获得随机效果"," NL 抽", " 张牌", " 张牌", " NL 获得 [E]", " [E]", " NL 给予", " 层 易伤", " 层 虚弱", " NL 消耗"]
+  },
+  "theMarked:Improvise": {
+    "NAME": "即兴發挥",
+    "DESCRIPTION": "消耗 1 张牌， themarked:召唤 2张 *创意武器 并重骰他们的效果。"
+  },
+  "theMarked:Challenge": {
+    "NAME": "挑战",
+    "DESCRIPTION": "给予1层 *力量 NL 给予 !M! 层 themarked:挑战 NL 消耗"
+  },
+  "theMarked:EternalStudent": {
+    "NAME": "职业学生",
+    "DESCRIPTION": "themarked:召唤 *艾莉莎之刃 ，增加其伤害 !M! 点 NL 每打出一次，这张牌的数值永久增加 !theMarked:SecondMagic! 点 NL 虚无 、 消耗",
+    "UPGRADE_DESCRIPTION": "themarked:召唤 *艾莉莎之刃 ，增加其伤害 !M! 点 NL 每打出一次，这张牌的数值永久增加 !theMarked:SecondMagic! 点 NL 消耗"
+  },
+  "theMarked:Generate": {
+    "NAME": "能量生成",
+    "DESCRIPTION": "耗费最多3点你的 themarked:充能 并获得等量的 [E]",
+    "UPGRADE_DESCRIPTION": "耗费最多3点你的 themarked:充能 并获得等量的 [E] NL themarked:维持"
+  },
+  "theMarked:Overcharge": {
+    "NAME": "能量超载",
+    "DESCRIPTION": "获得 !M! 点 themarked:充能 NL 获得 [E] [E] NL 获得1层 易伤"
+  },
+  "theMarked:Overthink": {
+    "NAME": "思绪超载",
+    "DESCRIPTION": "放3张 *晕眩 到你的手牌 NL 获得 1 层 虚弱 NL 抽 !M! 张牌"
+  },
+  "theMarked:Polarize": {
+    "NAME": "极化",
+    "DESCRIPTION": "获得 !M! 点 themarked:充能 NL 将当前的 themarked:充能 变为2倍 NL 消耗",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 themarked:充能 NL 将当前的 themarked:充能 变为2倍"
+
+  },
+  "theMarked:TakeCover": {
+    "NAME": "就地掩护",
+    "DESCRIPTION": "获得 !B! 点 格挡 NL 获得 2 层 themarked:愚昧"
+  },
+  "theMarked:Tailwind": {
+    "NAME": "随风而去",
+    "DESCRIPTION": "无法打出 NL 抽到这张牌时，抽 !M! 张牌并 消耗"
+  },
+  "theMarked:FavorableWinds": {
+    "NAME": "招风而来",
+    "DESCRIPTION": "将 !M! 张 *随风而去 洗入你的抽牌堆 NL 获得 !B! 点 格挡 NL 消耗",
+    "UPGRADE_DESCRIPTION": "将 !M! 张 *随风而去+ 洗入你的抽牌堆 NL 获得 !B! 点 格挡 NL 消耗"
+  },
+  "theMarked:Toughness": {
+    "NAME": "越挫越勇",
+    "DESCRIPTION": "每当你获得负面效果，获得 !M! 点 力量"
+  },
+  "theMarked:MagusForm": {
+    "NAME": "魔力型态",
+    "DESCRIPTION": "每打出 1 张技能牌，获得 !M! 点 themarked:充能"
+  },
+  "theMarked:ComboAttacks": {
+    "NAME": "连续攻击",
+    "DESCRIPTION": "每当你打出耗能至少为 [E] 的攻击牌，随机降低另一张手上的攻击牌 1 点耗能 "
+  },
+  "theMarked:RogueSparks": {
+    "NAME": "奇异火光",
+    "DESCRIPTION": "每当你抽到或 themarked:召唤 攻击牌，对一名随机敌人造成 !M! 点伤害并获得 !theMarked:SecondMagic! 点格挡"
+  },
+  "theMarked:Snap": {
+    "NAME": "恼羞",
+    "DESCRIPTION": "造成 !D! 点伤害 4 次 NL 获得 99 层 themarked:愚昧 NL 消耗",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 4 次 NL 获得 99 层 themarked:愚昧 NL 消耗 NL 保留"
+  },
+  "theMarked:Determination": {
+    "NAME": "决心",
+    "DESCRIPTION": "给予敌人 themarked:驱逐印记 时，抽 !M! 张牌 NL 每回合1次",
+    "UPGRADE_DESCRIPTION": "给予敌人 themarked:驱逐印记 时，抽 !M! 张牌 NL 每回合2次"
+  },
+  "theMarked:ThrowWeapon": {
+    "NAME": "投掷武器",
+    "DESCRIPTION": "消耗 1张攻击牌，造成其攻击伤害 X 次",
+    "UPGRADE_DESCRIPTION": "消耗 1张攻击牌，造成其攻击伤害 X+1 次"
+  },
+  "theMarked:DispelDoubt": {
+    "NAME": "无疑无惧 ",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 消耗 你牌堆中的所有诅咒牌 NL 消耗",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 消耗 你牌堆中的所有诅咒牌 NL 消耗 NL 固有"
+  },
+  "theMarked:UnarmedFury": {
+    "NAME": "赤手空拳",
+    "DESCRIPTION": "当 *艾莉莎之刃 不在游戏中才能打出，造成 !D! 点伤害两次",
+    "EXTENDED_DESCRIPTION": ["我已经召唤我的刀刃了，无法打出此牌"]
+  },
+  "theMarked:Maelstrom": {
+    "NAME": "大漩涡",
+    "DESCRIPTION": "获得 !M! 点 themarked:充能 NL 本回合打出的所有牌皆 themarked:维持 themarked:充能 NL 消耗",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 themarked:充能 NL 本回合打出的所有牌皆 themarked:维持 themarked:充能"
+  },
+  "theMarked:SuspiciousRaven": {
+    "NAME": "可疑的乌鸦",
+    "DESCRIPTION": "无法打出 NL 当这张牌被抽出，对所有敌人造成 !M! 点伤害 ",
+    "EXTENDED_DESCRIPTION": ["我无法打出这张牌"]
+  },
+  "theMarked:TakeOffHeels": {
+    "NAME": "脱鞋子",
+    "DESCRIPTION": "获得 !M! 点 敏捷 NL themarked:召唤 2张 *创意武器 并重骰它们的效果 NL 消耗",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 敏捷 NL themarked:召唤 2张 *创意武器+ 并重骰它们的效果 NL 消耗"
+  },
+  "theMarked:BindingBlade": {
+    "NAME": "束缚刀刃",
+    "DESCRIPTION": "themarked:召唤 *艾莉莎之刃 NL 使其给予 !M! 层 themarked:驱逐印记 NL 消耗"
+  },
+  "theMarked:Friction": {
+    "NAME": "摩擦起电",
+    "DESCRIPTION": "抽 !M! 张牌 NL 获得等同于你的手牌数量的 themarked:充能"
+  },
+  "theMarked:GodGivenPower": {
+    "NAME": "神力",
+    "DESCRIPTION": "在你的回合开始时，放 1 张 *迴路 到你的手牌",
+    "UPGRADE_DESCRIPTION": "在你的回合开始时，放 1 张 *迴路 到你的手牌 NL 固有"
+  },
+  "theMarked:Opportunist": {
+    "NAME": "机会主义者",
+    "DESCRIPTION": "当你格挡超过 6 点伤害时，放 1 张 *还击 到你的手牌 NL 每回合 1 次",
+    "UPGRADE_DESCRIPTION": "当你格挡超过 6 点伤害时，放 1 张 *还击 到你的手牌 NL 每回合 1 次 NL 固有"
+  },
+  "theMarked:MuscleMemory": {
+    "NAME": "肌肉记忆",
+    "DESCRIPTION": "当你 消耗 攻击牌， themarked:召唤 *艾莉莎之刃 NL 增加其伤害 !M! 点"
+  },
+  "theMarked:ChannelForce": {
+    "NAME": "原力激發",
+    "DESCRIPTION": "消耗 手中的所有攻击牌 NL themarked:召唤 *艾莉莎之刃 NL 每张被 消耗 的牌增加其伤害 !M! 点"
+  },
+  "theMarked:MysticalArsenal": {
+    "NAME": "神秘武库",
+    "DESCRIPTION": "一回合内每打出3张攻击牌，给予所有敌人 !M! 层 themarked:驱逐印记 并获得等同于敌人 themarked:驱逐印记 总和的 themarked:充能"
+  },
+  "theMarked:Electrify": {
+    "NAME": "通电",
+    "DESCRIPTION": "消耗 1 张攻击牌，放 !M! 张 *迴路 到手牌"
+  },
+  "theMarked:TurnInvisible": {
+    "NAME": "隐形",
+    "DESCRIPTION": "需要 2 点 themarked:充能 才能打出，获得1层 无实体 NL 本回合不能攻击 NL 消耗",
+    "EXTENDED_DESCRIPTION": ["我的充能不足。"]
+  },
+  "theMarked:Reabsorb": {
+    "NAME": "二次吸收",
+    "DESCRIPTION": "themarked:召唤 并 消耗 *艾莉莎之刃 NL 获得等同其攻击加其馀附魔*3的 themarked:充能 NL 消耗",
+    "UPGRADE_DESCRIPTION": "themarked:召唤 并 消耗 *艾莉莎之刃 NL 获得等同其攻击加其馀附魔*3的 themarked:充能"
+  },
+  "theMarked:OneWithTheBlade": {
+    "NAME": "带刀之人",
+    "DESCRIPTION": "themarked:召唤 *艾莉莎之刃 NL 赋予其 themarked:维持 NL 获得 !M! 点 themarked:充能 NL 消耗"
+  },
+  "theMarked:Abjuration": {
+    "NAME": "驱逐出境",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 给予 !M! 层 themarked:驱逐印记 NL 若目标为 爪牙，再给予 7 层 themarked:驱逐印记",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 NL 给予 !M! 层 themarked:驱逐印记 NL 若目标为 爪牙，再给予 7 层 themarked:驱逐印记 NL 指向所有 爪牙"
+  },
+  "theMarked:Vacuum": {
+    "NAME": "真空",
+    "DESCRIPTION": "造成 !D! 点伤害 NL 给予等同造成的伤害一半的 themarked:驱逐印记"
+  },
+  "theMarked:AttractMetal": {
+    "NAME": "吸引金属",
+    "DESCRIPTION": "获得 !B! 点 格挡 NL 获得等同于目标格挡值的格挡",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 NL 偷取目标的格挡"
+  },
+  "theMarked:Standoff": {
+    "NAME": "僵持不下",
+    "DESCRIPTION": "获得 !M! 点 格挡 NL 若本回合打出的第 1 张牌为 *技能 牌 ，所有角色获得 !M! 点格挡"
+  },
+  "theMarked:Parry": {
+    "NAME": "剑刃格挡",
+    "DESCRIPTION": "themarked:召唤 *艾莉莎之刃 NL 降低其伤害20% NL 获得等同其新攻击力的格挡 NL (获得 !B! 点格挡)",
+    "UPGRADE_DESCRIPTION": "themarked:召唤 *艾莉莎之刃 NL 降低其伤害20% NL 获得等同其原本攻击力的格挡 NL (获得 !B! 点格挡)"
+  },
+  "theMarked:Memento": {
+    "NAME": "信物",
+    "DESCRIPTION": "给予 !M! 层 themarked:驱逐印记 NL 抽 !theMarked:SecondMagic! 张牌 NL 消耗"
+  },
+  "theMarked:TheMission": {
+    "NAME": "收到任务",
+    "DESCRIPTION": "获得 2 层 themarked:愚昧 NL 若你有负面效果，给予 themarked:驱逐印记 时多给予 2 层"
+  },
+  "theMarked:BiggerThanFate": {
+    "NAME": "超越命运",
+    "DESCRIPTION": "将一张 *可疑的乌鸦 洗入你的弃牌堆 NL 消耗",
+    "UPGRADE_DESCRIPTION": "将一张 *可疑的乌鸦+ 洗入你的弃牌堆 NL 消耗"
+  }
+}

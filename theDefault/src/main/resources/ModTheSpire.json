@@ -1,0 +1,12 @@
+{
+  "modid": "TheMarked:${project.artifactId}",
+  "name": "The Marked",
+  "author_list": ["Verburner"],
+  "credits": "Basemod, ModTheSpire, Julia Karamell, luke871016, #modding, further credit is given on the Workshop page",
+  "description": "Adds a new character based on a fantasy novel by Julia Karamell. ",
+  "version": "1.27",
+  "sts_version": "${SlayTheSpire.version}",
+  "mts_version": "${ModTheSpire.version}",
+  "dependencies": ["basemod", "stslib"],
+  "update_json": ""
+}

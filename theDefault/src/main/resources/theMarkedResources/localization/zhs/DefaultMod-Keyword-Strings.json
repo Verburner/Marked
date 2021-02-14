@@ -1,0 +1,69 @@
+[
+  {
+    "NAMES": [
+      "keyword",
+      "keywords"
+    ],
+    "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords",
+      "multikey",
+      "multikeyword"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  },
+  {
+    "NAMES": [
+      "召唤"
+    ],
+    "DESCRIPTION": "将此卡从你的抽牌堆或弃牌堆放入手牌中。若其不存在或已被消耗，则放一张新的卡到手牌中"
+  },
+  {
+    "NAMES": [
+      "充能"
+    ],
+    "DESCRIPTION": "攻击牌会耗费充能增加伤害，依据的充能增加伤害，最多耗费6点"
+  },
+  {
+    "NAMES": [
+      "愚昧"
+    ],
+    "DESCRIPTION": "无法看见敌人的意图"
+  },
+  {
+    "NAMES": [
+      "驱逐印记",
+    ],
+    "DESCRIPTION": "如果驱逐印记叠加到10层，去除所有驱逐印記并造成50点伤害"
+  },
+  {
+    "NAMES": [
+      "挑战"
+    ],
+    "DESCRIPTION": "每次受到未被隔挡的攻击伤害时，降低目标的力量直到该回合结束。"
+  },
+  {
+    "NAMES": [
+      "良导体",
+    ],
+    "DESCRIPTION": "此牌会耗费所有充能"
+  },
+  {
+    "NAMES": [
+      "维持"
+    ],
+    "DESCRIPTION": "此牌使用充能增加伤害后不会耗费充能"
+  },
+  {
+    "PROPER_NAME": "驱逐抗性",
+    "NAMES": [
+      "驱逐抗性"
+    ],
+    "DESCRIPTION": "增加触發驱逐所需的上限，可以为负值，但不会低于-4"
+  }
+]
