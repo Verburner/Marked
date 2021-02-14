@@ -3,6 +3,7 @@ package theMarked.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -30,7 +31,7 @@ import static theMarked.DefaultMod.makePowerPath;
 
 //Consume and deal damage equal to amount on attack.
 
-public class RogueSparksPower extends AbstractPower implements CloneablePowerInterface {
+public class RogueSparksPower extends TwoAmountPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = DefaultMod.makeID("RogueSparksPower");
@@ -42,7 +43,6 @@ public class RogueSparksPower extends AbstractPower implements CloneablePowerInt
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("RogueSparksPower84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("RogueSparksPower32.png"));
-    public int amount2;
     public RogueSparksPower(final AbstractCreature owner, final AbstractCreature source, final int amount, final int amount2) {
         name = NAME;
         ID = POWER_ID;
@@ -50,6 +50,7 @@ public class RogueSparksPower extends AbstractPower implements CloneablePowerInt
         this.owner = owner;
         this.amount = amount;
         this.source = source;
+        this.amount2 = amount2;
 
         type = PowerType.BUFF;
         isTurnBased = false;

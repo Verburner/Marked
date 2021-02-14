@@ -90,13 +90,14 @@ public class SummonCircuitAction extends AbstractGameAction{
 
         if (AbstractDungeon.player.hasPower(RogueSparksPower.POWER_ID)) {
             int dmg = AbstractDungeon.player.getPower(RogueSparksPower.POWER_ID).amount;
+            int block = ((RogueSparksPower)AbstractDungeon.player.getPower(RogueSparksPower.POWER_ID)).amount2;
             AbstractCreature m = AbstractDungeon.getRandomMonster();
             if (m != null) {
                 this.addToTop(new DamageAction(m, new DamageInfo(m, dmg), AbstractGameAction.AttackEffect.NONE, true));
                 this.addToTop(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.0F));
                 this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
             }
-            this.addToBot(new GainBlockAction(AbstractDungeon.player, dmg));
+            this.addToBot(new GainBlockAction(AbstractDungeon.player, block));
         }
 
         if (AbstractDungeon.player.hasRelic(SecretDocuments.ID)) {

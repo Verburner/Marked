@@ -65,7 +65,7 @@ public class SummonImprovAction extends AbstractGameAction{
 
             if (!found) {
                 AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(this.card, 1));
-            } else if (found) {
+            } else {
                 first = x;
                 if (place == 1 || place == 2) {
                     AbstractDungeon.player.hand.addToHand(x);//
@@ -91,13 +91,14 @@ public class SummonImprovAction extends AbstractGameAction{
 
             if (AbstractDungeon.player.hasPower(RogueSparksPower.POWER_ID)) {
                 int dmg = AbstractDungeon.player.getPower(RogueSparksPower.POWER_ID).amount;
+                int block = ((RogueSparksPower)AbstractDungeon.player.getPower(RogueSparksPower.POWER_ID)).amount2;
                 AbstractCreature m = AbstractDungeon.getRandomMonster();
                 if (m != null) {
-                    this.addToTop(new DamageAction(m, new DamageInfo(m, dmg), AttackEffect.NONE, true));
+                    this.addToTop(new DamageAction(m, new DamageInfo(m, dmg), AbstractGameAction.AttackEffect.NONE, true));
                     this.addToTop(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.0F));
                     this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
                 }
-                this.addToBot(new GainBlockAction(AbstractDungeon.player, dmg));
+                this.addToBot(new GainBlockAction(AbstractDungeon.player, block));
             }
 
             if (AbstractDungeon.player.hasRelic(SecretDocuments.ID)) {

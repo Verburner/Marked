@@ -12,7 +12,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import theMarked.cards.AlyssasBlade;
+import theMarked.cards.RogueSparks;
 import theMarked.characters.TheMarked;
+import theMarked.powers.RogueSparksPower;
+import theMarked.relics.SecretDocuments;
 
 public class SummonAction extends AbstractGameAction{
     private AbstractCard card;
@@ -106,18 +109,19 @@ public class SummonAction extends AbstractGameAction{
         }
 
 
-        if (AbstractDungeon.player.hasRelic("theMarked:SecretDocuments")) {
+        if (AbstractDungeon.player.hasRelic(SecretDocuments.ID)) {
             this.addToTop(new DrawCardAction(AbstractDungeon.player, 1));
         }
-        if (AbstractDungeon.player.hasPower("theMarked:RogueSparksPower")) {
-            int dmg = AbstractDungeon.player.getPower("theMarked:RogueSparksPower").amount;
+        if (AbstractDungeon.player.hasPower(RogueSparksPower.POWER_ID)) {
+            int dmg = AbstractDungeon.player.getPower(RogueSparksPower.POWER_ID).amount;
+            int block = ((RogueSparksPower)AbstractDungeon.player.getPower(RogueSparksPower.POWER_ID)).amount2;
             AbstractCreature m = AbstractDungeon.getRandomMonster();
             if (m != null) {
                 this.addToTop(new DamageAction(m, new DamageInfo(m, dmg), AbstractGameAction.AttackEffect.NONE, true));
                 this.addToTop(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.0F));
                 this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
             }
-            this.addToBot(new GainBlockAction(AbstractDungeon.player, dmg));
+            this.addToBot(new GainBlockAction(AbstractDungeon.player, block));
         }
         this.isDone = true;
     }

@@ -317,7 +317,7 @@
   },
   "theMarked:MuscleMemory": {
     "NAME": "Muscle Memory",
-    "DESCRIPTION": "Whenever you exhaust an attack, themarked:Summon *Alyssa's *Blade and increase it's damage by !M!. "
+    "DESCRIPTION": "Whenever you exhaust an attack, NL themarked:Summon *Alyssa's *Blade and increase its damage by !M!. "
   },
   "theMarked:ChannelForce": {
     "NAME": "Channel Force",
