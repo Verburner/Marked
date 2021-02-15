@@ -1,0 +1,111 @@
+{
+  "theMarked:ArtifactOfAir": {
+    "NAME": "Static Bracelet",
+    "FLAVOR": "Bestowed by the Goddess of Air.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b2 #yCharge."
+    ]
+  },
+  "theMarked:DemonDagger": {
+    "NAME": "Demon Dagger",
+    "FLAVOR": "As used in rituals to seal away demons.",
+    "DESCRIPTIONS": [
+      "The first time you apply #yBanish each turn, apply #b2 more."
+    ]
+  },
+  "theMarked:Gun": {
+    "NAME": "Gun",
+    "FLAVOR": "A rare and valuable weapon among the Hirudians.",
+    "DESCRIPTIONS": [
+      "Limits Charge consumption on attacks to #b3 without effecting damage."
+    ]
+  },
+  "theMarked:NailFile": {
+    "NAME": "Nail File",
+    "FLAVOR": "It once belonged to a dangerous beauty hailing from Schimmerklamm.",
+    "DESCRIPTIONS": [
+      "Whenever #yBanish is lethal on a non-minion, heal #b10 Health."
+    ]
+  },
+  "theMarked:KettuFlask": {
+    "NAME": "Kettu Flask",
+    "FLAVOR": "Only the Kettu know how it works... Or if it works at all.",
+    "DESCRIPTIONS": [
+      "When you kill a Monster, gain #b13 #yBlock."
+    ]
+  },
+  "theMarked:VonisonLock": {
+    "NAME": "Vonison Lock",
+    "FLAVOR": "A lock from the mane of Hirudia's noble mounts.",
+    "DESCRIPTIONS": [
+      "Gain #b1 #yDexterity at the end of the first #b3 turns in combat."
+    ]
+  },
+  "theMarked:SecretDocuments": {
+    "NAME": "Secret Documents",
+    "FLAVOR": "Sought after by those who wish to learn about Demonology.",
+    "DESCRIPTIONS": [
+      "Whenever you #ySummon, draw #b1 card. "
+    ]
+  },
+  "theMarked:BronzeBlade": {
+    "NAME": "Bronze Blade",
+    "FLAVOR": "A product of the finest blacksmith in Ebenerz.",
+    "DESCRIPTIONS": [
+      "Replaces #yStatic #yBracelet. At the start of your turn, gain #b10 #yVigor. "
+    ]
+  },
+  "theMarked:Eyepatch": {
+    "NAME": "Eyepatch",
+    "FLAVOR": "One can only guess what hides beneath.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if you suffer from a negative effect, gain [E] . "
+    ]
+  },
+  "theMarked:Winder": {
+    "NAME": "Winder",
+    "FLAVOR": "Synonymous with one of Hirudia's least desirable professions.",
+    "DESCRIPTIONS": [
+      "When you shuffle your draw pile, gain #b10 Charge. "
+    ]
+  },
+  "theMarked:SpiritSword": {
+    "NAME": "Spirit Sword",
+    "FLAVOR": "The deadly familiar of a Tausrean Soldier.",
+    "DESCRIPTIONS": [
+      "When you summon an existing card from your deck, it costs #b0 this turn. "
+    ]
+  },
+  "theMarked:PlaceholderRelic": {
+    "NAME": "Placeholder Energy Relic",
+    "FLAVOR": "The snake is a friend.",
+    "DESCRIPTIONS": [
+      "Gain #b1 [E] ."
+    ]
+  },
+  "theMarked:PlaceholderRelic2": {
+    "NAME": "Placeholder Relic 2",
+    "FLAVOR": "You feel stronger.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b1 #yStrength."
+    ]
+  },
+  "theMarked:DefaultClickableRelic": {
+    "NAME": "Right-Clicky Relic",
+    "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+    "DESCRIPTIONS": [
+      "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+      "YOU ARE MINE!"
+    ]
+  },
+  "theMarked:BottledPlaceholderRelic": {
+    "NAME": "Bottled Placeholder",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS": [
+      "Choose a card. Whenever you take play any card, draw the chosen card.",
+      "Whenever you play a card, draw ",
+      ".",
+      "Select a card to bottle for "
+    ]
+  }
+}

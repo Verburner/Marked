@@ -1,0 +1,383 @@
+{
+  "theMarked:Strike": {
+    "NAME": "Schlag",
+    "DESCRIPTION": "Verursache !D! Schaden. "
+  },
+  "theMarked:Defend": {
+    "NAME": "Verteidigen",
+    "DESCRIPTION": "Erhalte !B! Block. "
+  },
+  "theMarked:SoldierOfQuellstein": {
+    "NAME": "Soldatin Quellsteins",
+    "DESCRIPTION": "Erhalte !B! Block und themarked:beschwöre *Alyssas *Klinge."
+  },
+  "theMarked:AlyssasBlade": {
+    "NAME": "Alyssas Klinge",
+    "DESCRIPTION": "Verursache !D! Schaden. ",
+    "EXTENDED_DESCRIPTION": ["NL Wende !M! Schwach an. ", "NL Wende !theMarked:SecondMagic! themarked:Verbannen an. ", "NL themarked:Behalten."]
+  },
+  "theMarked:MirrorBlade": {
+    "NAME": "Spiegelklinge",
+    "DESCRIPTION": "Verursache !D! Schaden. ",
+    "EXTENDED_DESCRIPTION": ["NL Wende !M! Schwach an. ", "NL Wende !theMarked:SecondMagic! themarked:Verbannen an. ", "NL themarked:Behalten."]
+  },
+  "theMarked:Riposte": {
+    "NAME": "Konter",
+    "DESCRIPTION": "Verursache !D! Schaden. NL Wende Verwundbar an. NL Erschöpft, NL Flüchtig. "
+  },
+  "theMarked:FlawedCopy": {
+    "NAME": "Duplicate Blade",
+    "DESCRIPTION": "Verursache !D! Schaden. "
+  },
+  "theMarked:Circuit": {
+    "NAME": "Stromkreislauf",
+    "DESCRIPTION": "Verursacht !D! Schaden. NL Verwendet JEGLICHE themarked:Ladung und themarked:behält sie. NL Erschöpft. "
+  },
+  "theMarked:SwordAndMagic": {
+    "NAME": "Schwert und Magie",
+    "DESCRIPTION": "Verursacht !D! Schaden. NL Wende 1 Verwundbar an. NL themarked:Beschwöre *Alyssas *Klinge. "
+  },
+  "theMarked:SelfDefenseTraining": {
+    "NAME": "Selbstverteidigung",
+    "DESCRIPTION": "Verursache !D! Schaden. Erhalte !B! Block. NL Wende !M! Schwach an. "
+  },
+  "theMarked:WastefulAttack": {
+    "NAME": "Verschwenderischer Schlag",
+    "DESCRIPTION": "Verursache !D! Schaden. NL Werde Schwach in der nächsten Runde. "
+  },
+  "theMarked:HeightenedSenses": {
+    "NAME": "Verschärfte Sinne",
+    "DESCRIPTION": "Erhalte !B! Block für jeden Gegner im Kampf. "
+  },
+  "theMarked:Pokerface": {
+    "NAME": "Unlesbar",
+    "DESCRIPTION": "Erhalte !B! Block. NL Wenn du einen negativen Effekt hast, erhalte !B! Block. "
+  },
+  "theMarked:BanishingWave": {
+    "NAME": "Bannwelle",
+    "DESCRIPTION": "Verursache !D! Schaden. Wende !M! themarked:Verbannen an allen Gegnern an. NL Erschöpft. ",
+    "UPGRADE_DESCRIPTION": "Verursache !D! Schaden. Wende !M! themarked:Verbannen an allen Gegnern an. "
+  },
+  "theMarked:Seal": {
+    "NAME": "Verriegeln",
+    "DESCRIPTION": "Wende !M! themarked:Verbannen an. Wenn es ausgelöst wird, erhalte die Hälfte der Kosten dieser Karte zurück und lege sie in deine Hand. "
+  },
+  "theMarked:EnhancedHearing": {
+    "NAME": "Verbessertes Gehör",
+    "DESCRIPTION": "Am Ende jeder Runde, erhalte !M! Block für jeden angreifenden Gegner. "
+  },
+  "theMarked:EnhanceMovement": {
+    "NAME": "Beschleunigte Bewegung",
+    "DESCRIPTION": "Benötigt 2 themarked:Ladung. NL Ziehe !M! Karten. Erhalte !M! temporäre Beweglichkeit. NL Erschöpft.",
+    "EXTENDED_DESCRIPTION": ["Ich habe nicht genug Ladung. "]
+  },
+  "theMarked:Defy": {
+    "NAME": "Trotzen",
+    "DESCRIPTION": "Verursache !D! Schaden an allen Gegnern. NL Wenn du weniger als 50% LP hast, verursache diesen Schaden erneut. ",
+    "UPGRADE_DESCRIPTION": "Verursache !D! Schaden an allen Gegnern. NL Wenn du weniger als 75% LP hast, verursache diesen Schaden erneut."
+  },
+  "theMarked:Indomitable": {
+    "NAME": "Unbezwingbar",
+    "DESCRIPTION": "Entferne alle negativen Effekte. Erhalte [E] für jeden entfernten Effekt. "
+  },
+  "theMarked:Heritage": {
+    "NAME": "Vermächtnis",
+    "DESCRIPTION": "Wenn du themarked:Verbannen anwendest, erhalte !M! Block. "
+  },
+  "theMarked:StartUp": {
+    "NAME": "Anlauf",
+    "DESCRIPTION": "Verursache !D! Schaden. NL Erhalte !M! Beweglichkeit. NL Erschöpft. "
+  },
+  "theMarked:BanishingStrike": {
+    "NAME": "Verbannender Schlag",
+    "DESCRIPTION": "Verursache !D! Schaden. NL Wende !M! themarked:Verbannen an. NL Verusache Schaden gleich themarked:Verbannen auf dem Ziel. "
+  },
+  "theMarked:ElectricStrings": {
+    "NAME": "Blitzfäden",
+    "DESCRIPTION": "Verursache !D! Schaden an allen Gegnern. NL In der nächsten Runde, wende 1 Schwach an allen Zielen an. "
+  },
+  "theMarked:ChainLightning": {
+    "NAME": "Kettenblitz",
+    "DESCRIPTION": "Verursache !D! Schaden am Ziel und halb so viel an allen anderen Gegnern. "
+  },
+  "theMarked:ResourceFulStrike": {
+    "NAME": "Findiger Schlag",
+    "DESCRIPTION": "Verursache !D! Schaden. Ziehe !M! zusätzliche Karten in der nächten Runde. ",
+    "UPGRADE_DESCRIPTION": "Verursache !D! Schaden. Ziehe !M! zusätzliche Karten in der nächsten Runde. "
+  },
+  "theMarked:Frustration": {
+    "NAME": "Frustration",
+    "DESCRIPTION": "Verursache !D! Schaden. Wenn das Ziel themarked:Verbannen hat, verursache diesen Schaden nochmal. "
+  },
+  "theMarked:EmpowerWeapon": {
+    "NAME": "Verstärke Waffe",
+    "DESCRIPTION": "themarked:Beschwöre *Alyssas *Klinge. Erhöhe seinen Schaden um !M!. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "themarked:Beschwöre *Alyssas *Klinge. Erhöhe seinen Schaden um !M!."
+  },
+  "theMarked:Electrocute": {
+    "NAME": "Stromschlag",
+    "DESCRIPTION": "Verursache !D! Schaden. NL Dieser Angriff verwendet JEGLICHE themarked:Ladung und erhält den doppelten Bonus davon. ",
+    "UPGRADE_DESCRIPTION": "Verursache !D! Schaden. NL Dieser Angriff verwendet JEGLICHE themarked:Ladung und erhält den dreifachen Bonus davon.  "
+  },
+  "theMarked:Static": {
+    "NAME": "Statische Aufladung",
+    "DESCRIPTION": "Mische einen *Stromkreislauf in deinen Nachziehstapel. NL Erhalte !B! Block. NL Erhalte themarked:Ladung gleich der Hälfte deines Blocks. "
+  },
+  "theMarked:Panic": {
+    "NAME": "Panik",
+    "DESCRIPTION": "Spiele die oberen !M! Karten deines Nachziehstapels. NL Erschöpft."
+  },
+  "theMarked:RepellingDisLadung": {
+    "NAME": "Abwehrende Entladung",
+    "DESCRIPTION": "Erhalte !B! Block. NL Uses up to *6 themarked:Ladung. ",
+    "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Uses up to *8 themarked:Ladung. NL themarked:Behalten. "
+  },
+  "theMarked:TwofoldDefense": {
+    "NAME": "Zweifaltige Verteidigung",
+    "DESCRIPTION": "Erhalte zweimal !B! Block. "
+  },
+  "theMarked:WardOff": {
+    "NAME": "Abwehren",
+    "DESCRIPTION": "Wende !M! themarked:Verbannen an. Erhalte !B! Block. Erhalte Block gleich themarked:Verbannen auf dem Ziel."
+  },
+  "theMarked:Aftermath": {
+    "NAME": "Nachspiel",
+    "DESCRIPTION": "Erhalte !M! themarked:Ladung für jeden in dieser Runde gespielten Angriff. NL Angriffe gespielt: !theMarked:SecondMagic! "
+  },
+  "theMarked:KeepCalmAndFight": {
+    "NAME": "Ruhig Bleiben und Kämpfen",
+    "DESCRIPTION": "Verursache !D! Schaden an allen Feinden. NL Kostet [E] weniger für jeden negativen Effekt auf dir. "
+  },
+  "theMarked:Levitate": {
+    "NAME": "Schweben",
+    "DESCRIPTION": "Ziehe !M! Karten. Verringere die Kosten für Fähigkeiten in deiner Hand auf 0 bist zum Ende der Runde. NL Erschöpft. "
+  },
+  "theMarked:ShockingTouch": {
+    "NAME": "Elektrisierender Griff",
+    "DESCRIPTION": "Verursache !D! Schaden. NL Wende !M! Verwundbar an dir UND dem Ziel an. "
+  },
+  "theMarked:LightningStrikesTwice": {
+    "NAME": "Perfekter Sturm",
+    "DESCRIPTION": "Verursache !D! Schaden. NL In der nächsten Runde, verursache diesen Schaden noch einmal. NL themarked:Behalten. "
+  },
+  "theMarked:TunnelVision": {
+    "NAME": "Tunnelblick",
+    "DESCRIPTION": "Verursache !D! Schaden drei mal. NL Werde themarked:Ignorant für !M! Runden. "
+  },
+  "theMarked:Parkour": {
+    "NAME": "Parkour",
+    "DESCRIPTION": "Verursache !D! Schaden zweimal. NL Dieser Schaden wird von Beweglichkeit erhöht. ",
+    "UPGRADE_DESCRIPTION": "Verursache !D! Schaden zweimal. NL Dieser Schaden wird vom Zweifachen deiner Beweglichkeit erhöht. "
+  },
+  "theMarked:ContemptForTheProud": {
+    "NAME": "Zurechtweisen",
+    "DESCRIPTION": "Verursache !D! Schaden. Verursacht disen Schaden ein weiteres Mal für jeden positiven Effekt am Ziel. "
+  },
+  "theMarked:CreepingChasm": {
+    "NAME": "Blitzwelle",
+    "DESCRIPTION": "Benötigt !theMarked:SecondMagic! themarked:Ladung. NL In der nächsten Runde, verursache !M! Schaden an allen Gegnern. NL Erschöpft. ",
+    "EXTENDED_DESCRIPTION": ["Ich habe nicht genug Ladung. "]
+  },
+  "theMarked:Convert": {
+    "NAME": "Konvertieren",
+    "DESCRIPTION": "Ziehe bis zu 5 Karten ausgehend von deiner themarked:Ladung und verbrauche diese. NL Du kannst in dieser Runde keine Karten mehr ziehen. ",
+    "UPGRADE_DESCRIPTION": "Ziehe bis zu 5 Karten ausgehend von deiner themarked:Ladung und themarked:erhalte diese. NL Du kannst in dieser Runde keine Karten mehr ziehen.. "
+  },
+  "theMarked:ParalyzingBlade": {
+    "NAME": "Paralisierende Klinge",
+    "DESCRIPTION": "themarked:Beschwöre *Alyssas *Klinge und lasse sie !M! Schwach anwenden. NL Erhalte !B! Block. NL Erschöpft. "
+  },
+  "theMarked:PowerFlow": {
+    "NAME": "Kraftfluss",
+    "DESCRIPTION": "themarked:Beschwöre einen *Stromkreis . NL Wenn er von deinem Deck aus themarked:beschwört wird, erhalte !M! themarked:Ladung. "
+  },
+  "theMarked:ImprovisedWeapon": {
+    "NAME": "Improvisierte Waffe",
+    "DESCRIPTION": "Verursache !D! Schaden. ",
+    "EXTENDED_DESCRIPTION": ["NL Füge einen zufälligen Effekt hinzu wenn diese Karte erzeugt wird","NL Ziehe ", " Karte", " Karten", "NL Erhalte [E]", " [E]", "NL Wende ", " Verwundbar an", " Schwach an", ". NL Erschöpft."]
+  },
+  "theMarked:Improvise": {
+    "NAME": "Improvisieren",
+    "DESCRIPTION": "Erschöpfe eine Karte. themarked:Beschwöre zwei *Improvisierte *Waffen und rolle ihren Effekt neu aus. "
+  },
+  "theMarked:Challenge": {
+    "NAME": "Herausfordern",
+    "DESCRIPTION": "Wende 1 *Stärke an. NL Wende !M! themarked:Herausforderung an. NL Erschöpft."
+  },
+  "theMarked:EternalStudent": {
+    "NAME": "Ewiger Schüler",
+    "DESCRIPTION": "themarked:Beschwöre *Alyssas *Klinge und erhöhe ihren Schaden um !M!. NL Erhöhe diese Zahl permanent um !theMarked:SecondMagic!. NL Flüchtig. NL Erschöpft. ",
+    "DESCRIPTION": "themarked:Beschwöre *Alyssas *Klinge und erhöhe ihren Schaden um !M!. NL Erhöhe diese Zahl permanent um !theMarked:SecondMagic!. NL Erschöpft. "
+  },
+  "theMarked:Generate": {
+    "NAME": "Generieren",
+    "DESCRIPTION": "Erhalte bis zu [E] [E] [E] ausgehend von deiner themarked:Ladung und verbrauche diese. ",
+    "UPGRADE_DESCRIPTION": "Erhalte bis zu [E] [E] [E] ausgehend von deiner themarked:Ladung und erhalte diese.  "
+  },
+  "theMarked:Overcharge": {
+    "NAME": "Überladen",
+    "DESCRIPTION": "Erhalte !M! themarked:Ladung und NL [E] [E] . Erhalte 1 Verwundbar. "
+  },
+  "theMarked:Overthink": {
+    "NAME": "Grübeln",
+    "DESCRIPTION": "Erzeuge 3 *Benommen in deiner Hand. NL Erhalte 1 Schwach. NL Ziehe !M! Karten. "
+  },
+  "theMarked:Polarize": {
+    "NAME": "Polarisieren",
+    "DESCRIPTION": "Erhalte !M! themarked:Ladung. Dann, verdopple deine themarked:Ladung. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Erhalte !M! themarked:Ladung. Dann, verdopple deine themarked:Ladung. "
+  },
+  "theMarked:TakeCover": {
+    "NAME": "In Deckung gehen",
+    "DESCRIPTION": "Erhalte !B! Block. NL Erhalte 2 themarked:Ignorant. "
+  },
+  "theMarked:Tailwind": {
+    "NAME": "Rückenwind",
+    "DESCRIPTION": "Unspielbar. Wenn diese Karte gezogen wird, ziehe !M! Karten. NL Erschöpft. "
+  },
+  "theMarked:FavorableWinds": {
+    "NAME": "Vorteilhafter Wind",
+    "DESCRIPTION": "Mische !M! *Rückenwind in deinen Nachziehstapel. NL Erhalte !B! Block. NL Erschöpft. ",
+    "UPGRADE_DESCRIPTION": "Mische !M! verbesserte *Rückenwind in deinen Nachziehstapel. NL Erhalte !B! Block. NL Erschöpft. "
+  },
+  "theMarked:Toughness": {
+    "NAME": "Zähigkeit",
+    "DESCRIPTION": "Immer wenn du einen negativen Effekt erhältst, erhalte !M! Stärke. "
+  },
+  "theMarked:MagusForm": {
+    "NAME": "Magus Form",
+    "DESCRIPTION": "Immer wenn du eine Fähigkeit spielst, erhalte !M! themarked:Ladung. "
+  },
+  "theMarked:ComboAttacks": {
+    "NAME": "Combo Angriffe",
+    "DESCRIPTION": "Immer wenn du einen Angriff spielst, der mindestens [E] kostet, reduziere die Kosten eines anderen Angriffs in deiner Hand um [E] "
+  },
+  "theMarked:RogueSparks": {
+    "NAME": "Funkenflug",
+    "DESCRIPTION": "Immer wenn du einen Angriff ziehst oder themarked:beschwörst, Verursache !M! Schaden an einem zufälligen Ziel und erhalte !theMarked:SecondMagic! Block. "
+  },
+  "theMarked:Snap": {
+    "NAME": "Durchdrehen",
+    "DESCRIPTION": "Verursache !D! Schaden 4 Mal. Erhalte 99 themarked:Ignorant. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Verursache !D! Schaden 4 Mal. Erhalte 99 themarked:Ignorant. NL Erschöpft. NL Behalten."
+  },
+  "theMarked:Determination": {
+    "NAME": "Unnachgiebigkeit",
+    "DESCRIPTION": "Das erste mal, das du in jeder Runde themarked:Verbannen anwendest, ziehe !M! Karten. ",
+    "UPGRADE_DESCRIPTION": "Die ersten 2 Mal, die du in jeder Runde themarked:Verbannen anwendest, ziehe !M! Karten. "
+  },
+  "theMarked:ThrowWeapon": {
+    "NAME": "Waffe werfen",
+    "DESCRIPTION": "Erschöpfe einen Angriff und verursache seinen Schaden X Mal. ",
+    "UPGRADE_DESCRIPTION": "Erschöpfe einen Angriff und verursache seinen Schaden X+1 Mal. "
+  },
+  "theMarked:DispelDoubt": {
+    "NAME": "Zweifel überwinden ",
+    "DESCRIPTION": "Verursache !D! Schaden. Erschöpfe alle Flüche aus deinem Deck. NL Erschöpft. ",
+    "UPGRADE_DESCRIPTION": "Verursache !D!. Erschöpfe alle Flüche aus deinem Deck. NL Erschöpft. NL Angeboren. "
+  },
+  "theMarked:UnarmedFury": {
+    "NAME": "Unbewaffneter Zorn",
+    "DESCRIPTION": "Verursache !D! Schaden zwei Mal. Kann nur gespielt werden, wenn *Alyssas *Klinge nicht im Spiel ist. ",
+    "EXTENDED_DESCRIPTION": ["Ich kann das nicht einsetzen, wenn meine Klinge beschworen ist. "]
+  },
+  "theMarked:Maelstrom": {
+    "NAME": "Maelstrom",
+    "DESCRIPTION": "Erhalte !M! themarked:Ladung. NL Alle Karten themarked:behalten in dieser Runde themarked:Ladung. NL Erschöpft. ",
+    "UPGRADE_DESCRIPTION": "Erhalte !M! themarked:Ladung. NL Alle Karten themarked:behalten in dieser Runde themarked:Ladung. "
+  },
+  "theMarked:SuspiciousRaven": {
+    "NAME": "Verdächtiger Rabe",
+    "DESCRIPTION": "Unspielbar. NL Wenn du diese Karte ziehst, verusache !M! Schaden an allen Gegnern. ",
+    "EXTENDED_DESCRIPTION": ["Ich kann das nicht spielen. "]
+  },
+  "theMarked:TakeOffHeels": {
+    "NAME": "Stöckelschuhe ausziehen",
+    "DESCRIPTION": "Erhalte !M! Beweglichkeit. NL themarked:Beschwöre zwei *Improvisierte *Waffen und rolle ihren Effekt neu aus. NL Erschöpft. ",
+    "UPGRADE_DESCRIPTION": "Erhalte !M! Beweglichkeit. NL themarked:Beschwöre zwei *Improvisierte *Waffen, verbessere sie und rolle ihren Effekt neu aus. NL Erschöpft. "
+  },
+  "theMarked:BindingBlade": {
+    "NAME": "Fesselnde Klinge",
+    "DESCRIPTION": "themarked:Beschwöre *Alyssas *Klinge und lasse sie !M! themarked:Verbannen anwenden. NL Erschöpft. "
+  },
+  "theMarked:Friction": {
+    "NAME": "Widerstand",
+    "DESCRIPTION": "Ziehe !M! Karten. NL Erhalte themarked:Ladung gleich der Anzahl von Karten in deiner Hand. "
+  },
+  "theMarked:GodGivenPower": {
+    "NAME": "Gottgegebene Macht",
+    "DESCRIPTION": "Zu Beginn deiner Runde, erzeuge einen *Stromkreis in deiner Hand. ",
+    "UPGRADE_DESCRIPTION": "Zu Beginn deiner Runde, erzeuge einen *Stromkreis in deiner Hand. NL Angeboren."
+  },
+  "theMarked:Opportunist": {
+    "NAME": "Opportunist",
+    "DESCRIPTION": "Das erste mal in jeder Runde, wenn du 6 oder mehr Angriffsschaden blockst, erzeuge einen *Konter in deiner Hand. ",
+    "UPGRADE_DESCRIPTION": "Das erste mal in jeder Runde, wenn du 6 oder mehr Angriffsschaden blockst, erzeuge einen *Konter in deiner Hand. NL Angeboren."
+  },
+  "theMarked:MuscleMemory": {
+    "NAME": "Muskelgedächtniss",
+    "DESCRIPTION": "Immer wenn du einen Angriff erschöpfst, themarked:Beschwöre *Alyssas *Klinge und erhöhe ihren Schaden um !M!. "
+  },
+  "theMarked:ChannelForce": {
+    "NAME": "Kraft umlenken",
+    "DESCRIPTION": "Erschöpfe alle Angriffe in deiner Hand, themarked:Beschwöre *Alyssas *Klinge und erhöhe ihren Schaden um !M! für jede Karte. "
+  },
+  "theMarked:MysticalArsenal": {
+    "NAME": "Mystisches Arsenal",
+    "DESCRIPTION": "Wenn du 3 Angriffe in einer Runde spielst, wende !M! themarked:Verbannen an allen Gegnern an. NL Erhalte themarked:Ladung gleich themarked:Verbannen auf allen Zielen. "
+  },
+  "theMarked:Electrify": {
+    "NAME": "Elektrisch machen",
+    "DESCRIPTION": "Erschöpfe einen Angriff und ersetze ihn durch !M! *Stromkreise. "
+  },
+  "theMarked:TurnInvisible": {
+    "NAME": "Unsichtbar machen",
+    "DESCRIPTION": "Benötigt 2 themarked:Ladung. NL Erhalte 1 immateriell und werde unfähig anzugreifen. NL Erschöpft.",
+    "EXTENDED_DESCRIPTION": ["Ich habe nicht genug Ladung. "]
+  },
+  "theMarked:Reabsorb": {
+    "NAME": "Reabsorbieren",
+    "DESCRIPTION": "themarked:Beschwöre und Erschöpfe *Alssas *Klinge. NL Erhalte themarked:Ladung basierend auf ihrem Anfriff, erhöht um *3 für weitere Verbesserungen. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "themarked:Beschwöre und Erschöpfe *Alssas *Klinge. NL Erhalte themarked:Ladung basierend auf ihrem Anfriff, erhöht um *3 für weitere Verbesserungen. "
+  },
+  "theMarked:OneWithTheBlade": {
+    "NAME": "Eins mit der Klinge",
+    "DESCRIPTION": "themarked:Beschwöre *Alsssa's *Klinge und gib ihr themarked:Behalten. NL Erhalte !M! themarked:Ladung. NL Erschöpft."
+  },
+  "theMarked:Abjuration": {
+    "NAME": "Abbeschwörung",
+    "DESCRIPTION": "Verursache !D! Schaden. NL Wende !M! themarked:Verbannen an. Wenn das Ziel ein Vasall ist, wende 7 mehr an.",
+    "UPGRADE_DESCRIPTION": "Verursache !D! Schaden. NL Wende !M! themarked:Verbannen an. Wenn das Ziel ein Vasall ist, wende 7 mehr an. NL Trifft ALLE Vasallen. "
+  },
+  "theMarked:Vacuum": {
+    "NAME": "Vakuum",
+    "DESCRIPTION": "Verursache !D! Schaden. NL Wende themarked:Verbannen gleich der Hälfte des unblockierten Schadens an. "
+  },
+  "theMarked:AttractMetal": {
+    "NAME": "Metall anziehen",
+    "DESCRIPTION": "Erhalte !B! Block. NL Erhalte Block basierend auf dem Block des Ziels. ",
+    "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Stiehl den Block des Ziels. "
+  },
+  "theMarked:Standoff": {
+    "NAME": "Standoff",
+    "DESCRIPTION": "Erhalte !M! Block. NL Wenn die erste Karte in deinem Zug eine Fähigkeit ist, erhält JEDER !M! Block. "
+  },
+  "theMarked:Parry": {
+    "NAME": "Parieren",
+    "DESCRIPTION": "themarked:Beschwöre *Alyssas *Klinge und reduziere ihren Schaden um 20%. NL Erhalte !B! Block, basierend auf ihrem neuen Schaden. ",
+    "UPGRADE_DESCRIPTION": "themarked:Beschwöre *Alyssas *Klinge und reduziere ihren Schaden um 20%. NL Erhalte !B! Block, basierend auf ihrem alten Schaden."
+  },
+  "theMarked:Memento": {
+    "NAME": "Andenken",
+    "DESCRIPTION": "Wende !M! themarked:Verbannen an. NL Ziehe !theMarked:SecondMagic! Karten. NL Erschöpft. "
+  },
+  "theMarked:TheMission": {
+    "NAME": "Die Mission",
+    "DESCRIPTION": "Erhalte !M! themarked:Ignorant. NL Wenn du einen negativen Effekt hast und themarked:Verbannen anwendest, wende !M! mehr an. "
+  },
+  "theMarked:BiggerThanFate": {
+    "NAME": "Mehr als Schicksal",
+    "DESCRIPTION": "Mische einen *Verdächtigen *Raben in deinen Ablegestapel. NL Erschöpft. ",
+    "UPGRADE_DESCRIPTION": "Mische einen verbesserten *Verdächtigen *Raben in deinen Ablegestapel. NL Erschöpft. "
+  }
+}

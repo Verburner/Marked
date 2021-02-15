@@ -1,0 +1,69 @@
+[
+  {
+    "NAMES": [
+      "keyword",
+      "keywords"
+    ],
+    "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords",
+      "multikey",
+      "multikeyword"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  },
+  {
+    "NAMES": [
+      "召唤"
+    ],
+    "DESCRIPTION": "从抽牌堆或弃牌堆放入手牌。若不存在或已被消耗，则生成一张新的牌到手牌。"
+  },
+  {
+    "NAMES": [
+      "充能"
+    ],
+    "DESCRIPTION": "攻击牌会耗费充能以提高伤害。最多耗费6点。"
+  },
+  {
+    "NAMES": [
+      "愚蠢"
+    ],
+    "DESCRIPTION": "无法看见敌人的意图。"
+  },
+  {
+    "NAMES": [
+      "放逐",
+    ],
+    "DESCRIPTION": "如果放逐叠加到10层，失去所有放逐并造成50点伤害。"
+  },
+  {
+    "NAMES": [
+      "挑战"
+    ],
+    "DESCRIPTION": "每次受到未被格挡的攻击伤害时，本回合失去力量。"
+  },
+  {
+    "NAMES": [
+      "导体",
+    ],
+    "DESCRIPTION": "这张牌会耗费所有充能"
+  },
+  {
+    "NAMES": [
+      "维持"
+    ],
+    "DESCRIPTION": "这张牌使用后不会耗费充能。"
+  },
+  {
+    "PROPER_NAME": "抵抗",
+    "NAMES": [
+      "抵抗"
+    ],
+    "DESCRIPTION": "本回合提高触发放逐的触发上限。"
+  }
+]

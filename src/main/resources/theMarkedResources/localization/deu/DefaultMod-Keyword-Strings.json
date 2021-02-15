@@ -1,0 +1,85 @@
+[
+  {
+    "NAMES": [
+      "keyword",
+      "keywords"
+    ],
+    "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords",
+      "multikey",
+      "multikeyword"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  },
+  {
+    "NAMES": [
+      "Beschwören",
+      "beschwöre",
+      "beschwört",
+      "Beschwöre",
+      "Beschwört",
+      "Beschwörung",
+      "beschwörung"
+    ],
+    "DESCRIPTION": "Nimm diese Karte von deinem Ablege- oder Nachziehstapel auf deine Hand. Wenn sie nicht existiert oder erschöpft ist, erzeuge eine neue Karte in deiner Hand. "
+  },
+  {
+    "NAMES": [
+      "Ladung",
+      "ladung"
+    ],
+    "DESCRIPTION": "Resource für einige Karten. Angriffe verbrauchen bis zu 6 Ladung und fügen diese zu ihrem Schaden hinzu. "
+  },
+  {
+    "NAMES": [
+      "Ignorant",
+      "ignorant"
+    ],
+    "DESCRIPTION": "Du siehst gegnerische Absichten nicht."
+  },
+  {
+    "NAMES": [
+      "Verbannen",
+      "verbanne"
+    ],
+    "DESCRIPTION": "Wenn Verbannen 10 oder mehr erreicht, entferne es und verursache #b50 Schaden."
+  },
+  {
+    "NAMES": [
+      "Herausfoderung",
+      "herausfordern"
+    ],
+    "DESCRIPTION": "Verringert die Stärke des Ziels bis zum Ende des Zuges wenn es Schaden nimmt."
+  },
+  {
+    "NAMES": [
+      "Leiter",
+      "leiter"
+    ],
+    "DESCRIPTION": "Verwendet jegliche vorhandene Ladung."
+  },
+  {
+    "NAMES": [
+      "Behalten",
+      "behalten",
+      "Behalte",
+      "behalte",
+      "Behält",
+      "behält"
+    ],
+    "DESCRIPTION": "Profitiert von Ladung, ohne diese zu verbrauchen. "
+  },
+  {
+    "NAMES": [
+      "Resistenz",
+      "resistiert"
+    ],
+    "DESCRIPTION": "Erhöht den Schwellenwert für Verbannung. Kann in den negativen Bereich geraten, aber nicht unter -4. "
+  }
+]

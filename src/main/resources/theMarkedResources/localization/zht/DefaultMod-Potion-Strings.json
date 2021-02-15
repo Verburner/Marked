@@ -1,0 +1,14 @@
+{
+"theMarked:SummonPotion": {
+        "NAME": "召喚藥水",
+        "DESCRIPTIONS": ["召喚 #y艾莉莎之刃 並且增加其傷害 ", " 點"]
+},
+"theMarked:ChargePotion": {
+        "NAME": "風暴之釀",
+        "DESCRIPTIONS": ["獲得 ", " 點 #y充能"]
+},
+"theMarked:HoverShot": {
+		"NAME": "懸浮之飲",
+		"DESCRIPTIONS": ["降低手牌中技能卡的耗能 ", " 點直到下次打出。"]
+}
+}
