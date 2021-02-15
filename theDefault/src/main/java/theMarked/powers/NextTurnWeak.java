@@ -56,8 +56,8 @@ public class NextTurnWeak extends AbstractPower implements CloneablePowerInterfa
     public void atEndOfRound() {
         this.flash();
         AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.owner.hb.cX, this.owner.hb.cY, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        if (owner.isPlayer) this.addToBot(new ApplyPowerAction(this.owner, this.owner, new WeakPower(owner,amount,false)));
-        else this.addToBot(new ApplyPowerAction(this.owner, this.owner, new WeakPower(owner,amount,true)));
+        if (owner.isPlayer) this.addToBot(new ApplyPowerAction(this.owner, this.owner, new WeakPower(owner,amount,false),amount));
+        else this.addToBot(new ApplyPowerAction(this.owner, this.owner, new WeakPower(owner,amount,true),amount));
         this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "theMarked:NextTurnWeak"));
     }
 
