@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
@@ -61,7 +62,7 @@ public class ImprovisedWeapon extends AbstractDynamicCard implements CustomSavab
     private static final int UPGRADE_PLUS_DMG = 1;
     private static final int MAGIC = 1;
     private static final int UPGRADE_PLUS_MAGIC = 1;
-    public int effect = ThreadLocalRandom.current().nextInt(1, 5);
+    public int effect ;
 
     public int specialDamage;
 
@@ -74,6 +75,12 @@ public class ImprovisedWeapon extends AbstractDynamicCard implements CustomSavab
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;
         this.exhaust = true;
+
+        if(AbstractDungeon.player != null){
+            effect = AbstractDungeon.cardRng.random(1,4);
+        }else {
+            effect = 0;
+        }
     }
 
     // Actions the card should do.
@@ -85,35 +92,37 @@ public class ImprovisedWeapon extends AbstractDynamicCard implements CustomSavab
         this.addToBot(new WaitAction(0.4F));
         this.addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        if (effect == 1) this.addToBot(new DrawCardAction(p,magicNumber,false));
+        if (effect == 1) this.addToBot(new DrawCardAction(p, magicNumber, false));
         if (effect == 2) this.addToBot(new GainEnergyAction(magicNumber));
-        if (effect == 3) this.addToBot(new ApplyPowerAction(m,p,new WeakPower(m,magicNumber,false)));
-        if (effect == 4) this.addToBot(new ApplyPowerAction(m,p,new VulnerablePower(m,magicNumber,false)));
+        if (effect == 3) this.addToBot(new ApplyPowerAction(m, p, new WeakPower(m, magicNumber, false)));
+        if (effect == 4) this.addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, magicNumber, false)));
     }
 
     @Override
-    public void initializeDescription()
-    {
+    public void initializeDescription() {
         String baseRawDescription = rawDescription;
-        if (effect == 0) rawDescription += DESC_0 + DESC_end;
-        if (effect == 1)
-        {
-            if (upgraded) rawDescription += DESC_card1 + magicNumber + DESC_card3 + DESC_end;
-            else rawDescription += DESC_card1 + magicNumber + DESC_card2 + DESC_end;
-        }
-        if (effect == 2)
-        {
-            if (upgraded) rawDescription += DESC_ene1 + DESC_ene2 + DESC_end;
-            else rawDescription += DESC_ene1 + DESC_end;
-        }
-        //if (effect == 3) rawDescription += DESC_gain + DESC_charge+ DESC_end;
-        if (effect == 3) rawDescription += DESC_apply + magicNumber + DESC_weak + DESC_end;
-        if (effect == 4) rawDescription += DESC_apply + magicNumber + DESC_vuln + DESC_end;
+        if (effect == 0 || AbstractDungeon.player == null)
+            rawDescription += DESC_0 + DESC_end;
+        else {
+            if (effect == 1) {
+                if (upgraded) rawDescription += DESC_card1 + magicNumber + DESC_card3 + DESC_end;
+                else rawDescription += DESC_card1 + magicNumber + DESC_card2 + DESC_end;
+            }
+            if (effect == 2) {
+                if (upgraded) rawDescription += DESC_ene1 + DESC_ene2 + DESC_end;
+                else rawDescription += DESC_ene1 + DESC_end;
+            }
+            //if (effect == 3) rawDescription += DESC_gain + DESC_charge+ DESC_end;
+            if (effect == 3) rawDescription += DESC_apply + magicNumber + DESC_weak + DESC_end;
+            if (effect == 4) rawDescription += DESC_apply + magicNumber + DESC_vuln + DESC_end;
 
-        //if (effect == 6) rawDescription += DESC_apply + DESC_banish + DESC_end;
+            //if (effect == 6) rawDescription += DESC_apply + DESC_banish + DESC_end;
+        }
+
         super.initializeDescription();
         rawDescription = baseRawDescription;
     }
+
     // Upgraded stats.
     @Override
     public void upgrade() {

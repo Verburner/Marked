@@ -138,7 +138,7 @@
   },
   "theMarked:WardOff": {
     "NAME": "回避",
-    "DESCRIPTION": "给予 !M! 点 themarked:放逐 。 NL 获得 !B! 点 格挡 。 NL 每层 themarked:放逐 层数的 格挡 。"
+    "DESCRIPTION": "给予 !M! 点 themarked:放逐 。 NL 获得 !B! 点 格挡 。 NL 获得敌人 themarked:放逐 层数的 格挡 。"
   },
   "theMarked:Aftermath": {
     "NAME": "战果",
@@ -194,7 +194,7 @@
   "theMarked:ImprovisedWeapon": {
     "NAME": "即兴武器",
     "DESCRIPTION": "造成 !D! 点伤害。",
-    "EXTENDED_DESCRIPTION": [" NL 当这张牌生成时，获得随机效果。"," NL 抽", " 张牌。", " 张牌。", " NL 获得 [E] 。", " [E] 。", " NL 给予 ", " 层 易伤 。", " 层 虚弱 。", " NL 消耗 。"]
+    "EXTENDED_DESCRIPTION": [" NL 当这张牌生成时，获得随机效果。"," NL 抽", " 张牌。", " 张牌。", " NL 获得 [E] ", " [E] ", " NL 给予 ", " 层 易伤 。", " 层 虚弱 。", " NL 消耗 。"]
   },
   "theMarked:Improvise": {
     "NAME": "即兴发挥",
@@ -302,7 +302,7 @@
   },
   "theMarked:Friction": {
     "NAME": "摩擦起电",
-    "DESCRIPTION": "抽 !M! 张牌。 NL 获得等同于你的手牌数量的 themarked:充能。"
+    "DESCRIPTION": "抽 !M! 张牌。 NL 获得等同于你的手牌数量的 themarked:充能 。"
   },
   "theMarked:GodGivenPower": {
     "NAME": "神力",
