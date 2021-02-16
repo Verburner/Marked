@@ -1,0 +1,111 @@
+{
+  "theMarked:ArtifactOfAir": {
+    "NAME": "静置手链",
+    "FLAVOR": "由空气之神所赐予。",
+    "DESCRIPTIONS": [
+      "回合开始时，获得 #b2 层 #y充能 。"
+    ]
+  },
+  "theMarked:DemonDagger": {
+    "NAME": "恶魔匕首",
+    "FLAVOR": "封印恶魔仪式时所使用的匕首。",
+    "DESCRIPTIONS": [
+      "每回合第一次给予 #y放逐印记 时，多给予 #b2 层。"
+    ]
+  },
+  "theMarked:Gun": {
+    "NAME": "枪",
+    "FLAVOR": "价值连城的赫鲁迪亚稀有武器。",
+    "DESCRIPTIONS": [
+      "攻击牌最多耗费 #b3 点充能，但伤害不变。"
+    ]
+  },
+  "theMarked:NailFile": {
+    "NAME": "指甲锉刀",
+    "FLAVOR": "它曾属于一名危险又漂亮的施密克拉姆女子。",
+    "DESCRIPTIONS": [
+      "当你触发 #y放逐 且斩杀非爪牙的敌人，回复 #b10 点生命。"
+    ]
+  },
+  "theMarked:KettuFlask": {
+    "NAME": "凯图壶",
+    "FLAVOR": "只有凯图知道它是怎么运作的，或是说它根本没屁用。",
+    "DESCRIPTIONS": [
+      "当你杀死一名敌人，获得 #b13 点 #y格挡 。"
+    ]
+  },
+  "theMarked:VonisonLock": {
+    "NAME": "威尼森锁",
+    "FLAVOR": "赫鲁迪亚贵族坐骑上的锁。",
+    "DESCRIPTIONS": [
+      "每场战斗的前 #b3 个回合结束时，获得 #b1 点 #y敏捷 。"
+    ]
+  },
+  "theMarked:SecretDocuments": {
+    "NAME": "机密文件",
+    "FLAVOR": "这份文件被研读恶魔学的那群人追查",
+    "DESCRIPTIONS": [
+      "每当你 #y召唤 ，抽 #b1 张牌。"
+    ]
+  },
+  "theMarked:BronzeBlade": {
+    "NAME": "青铜刀",
+    "FLAVOR": "埃本纳兹最厉害的铁匠打造的产品。",
+    "DESCRIPTIONS": [
+      "替换 #y静置锁炼 。 NL 你的回合开始时，获得 #b10 层 #y活力 。"
+    ]
+  },
+  "theMarked:Eyepatch": {
+    "NAME": "眼罩",
+    "FLAVOR": "人们只能乱猜眼罩下面到底藏了什么。",
+    "DESCRIPTIONS": [
+      "你的回合开始时，如果你有负面效果，获得 [E] 。"
+    ]
+  },
+  "theMarked:Winder": {
+    "NAME": "发条",
+    "FLAVOR": "赫鲁迪亚最不受欢迎的职业的昵称之一",
+    "DESCRIPTIONS": [
+      "每当你洗牌，获得 #b10 点 #y充能 。"
+    ]
+  },
+  "theMarked:SpiritSword": {
+    "NAME": "灵剑",
+    "FLAVOR": "来自唐斯瑞恩士兵致命的熟悉感。",
+    "DESCRIPTIONS": [
+      "当你从你的牌堆中召唤一张已存在的卡牌，本回合其耗能为 #b0"
+    ]
+  },
+  "theMarked:PlaceholderRelic": {
+    "NAME": "Placeholder Energy Relic",
+    "FLAVOR": "The snake is a friend.",
+    "DESCRIPTIONS": [
+      "Gain #b1 [E] ."
+    ]
+  },
+  "theMarked:PlaceholderRelic2": {
+    "NAME": "Placeholder Relic 2",
+    "FLAVOR": "You feel stronger.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b1 #yStrength."
+    ]
+  },
+  "theMarked:DefaultClickableRelic": {
+    "NAME": "Right-Clicky Relic",
+    "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+    "DESCRIPTIONS": [
+      "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+      "YOU ARE MINE!"
+    ]
+  },
+  "theMarked:BottledPlaceholderRelic": {
+    "NAME": "Bottled Placeholder",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS": [
+      "Choose a card. Whenever you take play any card, draw the chosen card.",
+      "Whenever you play a card, draw ",
+      ".",
+      "Select a card to bottle for "
+    ]
+  }
+}

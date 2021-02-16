@@ -1,0 +1,98 @@
+{
+  "theMarked:Charge": {
+    "NAME": "充能",
+    "DESCRIPTIONS": ["目前拥有 #b", " 点，攻击牌一次最多耗费6点 #y充能 。"]
+  },
+  "theMarked:BanishPower": {
+    "NAME": "放逐",
+    "DESCRIPTIONS": ["如果叠加到 #b", " 层，移除所有 #y放逐 并造成 #b50 点伤害。"]
+  },
+  "theMarked:BanishResistancePower": {
+    "NAME": "抗性",
+    "DESCRIPTIONS": ["增加触发放逐所需的层数 #b", "降低触发放逐所需的层数 #b", " 层，无法低于 #b-4"]
+  },
+  "theMarked:NextTurnWeak": {
+      "NAME": "下回合虚弱",
+      "DESCRIPTIONS": ["下回合获得 #y虚弱 。"]
+  },
+  "theMarked:NextTurnFrail": {
+      "NAME": "下回合脆弱",
+      "DESCRIPTIONS": ["下回合获得 #y脆弱 。"]
+  },
+    "theMarked:IgnorantPower": {
+      "NAME": "愚蠢",
+      "DESCRIPTIONS": ["无法看到敌人意图。"]
+  },
+    "theMarked:EnhancedHearingPower": {
+      "NAME": "听觉强化",
+      "DESCRIPTIONS": ["回合结束时，每个意图攻击的敌人使你获得 #b", " 点 #y格挡 。"]
+  },
+    "theMarked:HeritagePower": {
+      "NAME": "遗留",
+      "DESCRIPTIONS": ["当你给予敌人 #y放逐 ，获得 #b", " 点格挡"]
+  },
+    "theMarked:NextTurnDamage": {
+      "NAME": "下回合伤害",
+      "DESCRIPTIONS": ["回合结束时，失去 #b", " 点生命值。"]
+  },
+    "theMarked:ChallengedPower": {
+    "NAME": "挑战",
+    "DESCRIPTIONS": ["受到攻击时，本回合失去 #b", " 点 #y力量 。"]
+  },
+    "theMarked:SummonPower": {
+    "NAME": "越挫越勇",
+    "DESCRIPTIONS": ["当你获得负面效果，获得 #b", " 点 #y力量 。"]
+  },
+  "theMarked:AdeptPower": {
+    "NAME": "魔力型态",
+    "DESCRIPTIONS": ["当你打出一张技能牌，获得 #b", " 点 #y充能 。"]
+  },
+  "theMarked:ComboPower": {
+    "NAME": "连续攻击",
+    "DESCRIPTIONS": ["当你打出耗费至少为1的攻击牌，降低另一张攻击牌的耗费 #b","点"]
+  },
+  "theMarked:RogueSparksPower": {
+    "NAME": "奇异火光",
+    "DESCRIPTIONS": ["当你抽到或召唤攻击牌，对一名随机敌人造成 #b", " 点伤害并获得 #b", " 点格挡"]
+  },
+  "theMarked:MaelstromPower": {
+    "NAME": "大漩涡",
+    "DESCRIPTIONS": ["接下来的 #b", " 回合， #y充能不会被耗费"]
+  },
+  "theMarked:SoldierPower": {
+    "NAME": "疾风形态",
+    "DESCRIPTIONS": ["当你打出一张攻击牌，召唤艾莉莎之刃并使其增加 #b", " 点伤害"]
+  },
+  "theMarked:DeterminationPower": {
+    "NAME": "决心",
+    "DESCRIPTIONS": ["每回合第一次给予 #y放逐 时，抽 #b","每回合第一次 "," 给予 #y放逐 时，抽 #b", " 张牌", "?"]
+  },
+  "theMarked:GodGivenPower": {
+    "NAME": "神力",
+    "DESCRIPTIONS": ["回合开始时，将 #b", " 张回路放到手牌"]
+  },
+  "theMarked:MysticalPower": {
+    "NAME": "神秘武库",
+    "DESCRIPTIONS": ["一回合打出 3 张攻击牌后，给予所有敌人 #b", " 层 #y放逐 。 NL 获得等同于敌人 #y放逐 层数总和的 #y充能"]
+  },
+  "theMarked:OpportunistPower": {
+    "NAME": "机会主义者",
+    "DESCRIPTIONS": ["每回合第一次格挡超过 6 点伤害时，放 #b", " 张 *反击 到手牌"]
+  },
+  "theMarked:CreepingChasmPower": {
+    "NAME": "裂缝蔓延",
+    "DESCRIPTIONS": ["再", " 回合，对所有敌人造成 #b", " 点伤害"]
+  },
+  "theMarked:StandoffPower": {
+    "NAME": "僵持不下",
+    "DESCRIPTIONS": ["若你本回合打出的第一张牌为技能牌，所有角色获得 #b", " 点 #y格挡 。"]
+  },
+  "theMarked:MissionPower": {
+    "NAME": "收到任务",
+    "DESCRIPTIONS": ["当你给予 #y放逐 并且有负面效果时，多给予 #b", " 层"]
+  },
+  "theMarked:MuscleMemoryPower": {
+    "NAME": "肌肉记忆",
+    "DESCRIPTIONS": ["若你消耗攻击牌，召唤艾莉莎之刃并增加其伤害 #b", " 点"]
+  }
+}
