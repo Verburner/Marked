@@ -353,10 +353,12 @@ public class TheMarked extends CustomPlayer {
         ((BetterSpriterAnimation) this.animation).myPlayer.setAnimation("idle_outOfCombat");
     }
 
+    /*
     public void stopAnimation() {
         int time = ((BetterSpriterAnimation)this.animation).myPlayer.getAnimation().length;
         ((BetterSpriterAnimation)this.animation).myPlayer.setTime(time);
     }
+    */
 
     // Should return an AttackEffect array of any size greater than 0. These effects
     // will be played in sequence as your character's finishing combo on the heart.
