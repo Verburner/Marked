@@ -6,9 +6,11 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import theMarked.DefaultMod;
 import theMarked.cards.Circuit;
 
 import java.util.ArrayList;
@@ -51,7 +53,7 @@ public class ElectrifyAction extends AbstractGameAction {
 
             this.p.hand.group.removeAll(this.cannotDuplicate);
             if (this.p.hand.group.size() > 1) {
-                AbstractDungeon.handCardSelectScreen.open("Select an Attack to exhaust.", 1, false, false, false, false);
+                AbstractDungeon.handCardSelectScreen.open(CardCrawlGame.languagePack.getUIString(DefaultMod.makeID("ElectrifyAction")).TEXT[0], 1, false, false, false, false);
                 this.tickDuration();
                 return;
             }

@@ -1,7 +1,7 @@
 {
   "theMarked:Charge": {
     "NAME": "充能",
-    "DESCRIPTIONS": ["目前拥有 #b", " 点，攻击牌一次最多耗费6点 #y充能 。"]
+    "DESCRIPTIONS": ["目前拥有 #b", " 点。 NL #y充能 能耗费层数并提高攻击牌的伤害。 NL 攻击牌一次最多耗费6点 #y充能 。"]
   },
   "theMarked:BanishPower": {
     "NAME": "放逐",

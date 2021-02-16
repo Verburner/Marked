@@ -109,7 +109,7 @@ public class ImprovisedWeapon extends AbstractDynamicCard implements CustomSavab
                 else rawDescription += DESC_card1 + magicNumber + DESC_card2 + DESC_end;
             }
             if (effect == 2) {
-                if (upgraded) rawDescription += DESC_ene1 + DESC_ene2 + DESC_end;
+                if (upgraded) rawDescription += DESC_ene2 + DESC_end;
                 else rawDescription += DESC_ene1 + DESC_end;
             }
             //if (effect == 3) rawDescription += DESC_gain + DESC_charge+ DESC_end;

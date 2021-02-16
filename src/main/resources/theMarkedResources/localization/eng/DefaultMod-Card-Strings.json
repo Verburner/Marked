@@ -194,7 +194,7 @@
   "theMarked:ImprovisedWeapon": {
     "NAME": "Improvised Weapon",
     "DESCRIPTION": "Deal !D! damage. ",
-    "EXTENDED_DESCRIPTION": ["NL Add a random effect when this card is created","NL Draw ", " card", " cards", "NL Gain [E]", " [E]", "NL Apply ", " Vulnerable", " Weak", ". NL Exhaust."]
+    "EXTENDED_DESCRIPTION": ["NL Add a random effect when this card is created","NL Draw ", " card", " cards", "NL Gain [E]", "NL Gain [E] [E]", "NL Apply ", " Vulnerable", " Weak", ". NL Exhaust."]
   },
   "theMarked:Improvise": {
     "NAME": "Improvise",

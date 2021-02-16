@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.helpers.GetAllInBattleInstances;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ThrowDaggerEffect;
+import theMarked.DefaultMod;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -72,7 +73,7 @@ public class ThrowWeaponAction extends AbstractGameAction{
 
             this.p.hand.group.removeAll(this.cannotDuplicate);
             if (this.p.hand.group.size() > 1) {
-                AbstractDungeon.handCardSelectScreen.open("exhaust.", 1, false, false, false, false);
+                AbstractDungeon.handCardSelectScreen.open(CardCrawlGame.languagePack.getUIString(DefaultMod.makeID("ThrowWeaponAction")).TEXT[0], 1, false, false, false, false);
                 this.tickDuration();
                 return;
             }

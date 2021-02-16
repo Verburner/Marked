@@ -194,7 +194,7 @@
   "theMarked:ImprovisedWeapon": {
     "NAME": "Improvisierte Waffe",
     "DESCRIPTION": "Verursache !D! Schaden. ",
-    "EXTENDED_DESCRIPTION": ["NL Füge einen zufälligen Effekt hinzu wenn diese Karte erzeugt wird","NL Ziehe ", " Karte", " Karten", "NL Erhalte [E]", " [E]", "NL Wende ", " Verwundbar an", " Schwach an", ". NL Erschöpft."]
+    "EXTENDED_DESCRIPTION": ["NL Füge einen zufälligen Effekt hinzu wenn diese Karte erzeugt wird","NL Ziehe ", " Karte", " Karten", "NL Erhalte [E]", "NL Erhalte [E] [E]", "NL Wende ", " Verwundbar an", " Schwach an", ". NL Erschöpft."]
   },
   "theMarked:Improvise": {
     "NAME": "Improvisieren",

@@ -14,12 +14,12 @@
   "theMarked:AlyssasBlade": {
     "NAME": "艾莉莎之刃",
     "DESCRIPTION": "造成 !D! 點傷害 ",
-    "EXTENDED_DESCRIPTION": ["NL 給予 !M! 層 虛弱 ", "NL 給予 !theMarked:SecondMagic! 層 themarked:驅逐印記 ", "NL themarked:維持"]
+    "EXTENDED_DESCRIPTION": ["　NL 給予 !M! 層 虛弱 ", "　NL 給予 !theMarked:SecondMagic! 層 themarked:驅逐印記 ", "　NL themarked:維持"]
   },
   "theMarked:MirrorBlade": {
     "NAME": "鏡像之刃",
     "DESCRIPTION": "造成 !D! 點傷害 ",
-    "EXTENDED_DESCRIPTION": ["NL 給予 !M! 層 虛弱 ", "NL 給予 !theMarked:SecondMagic! 層 themarked:驅逐印記 ", "NL themarked:維持"]
+    "EXTENDED_DESCRIPTION": ["　NL 給予 !M! 層 虛弱 ", "　NL 給予 !theMarked:SecondMagic! 層 themarked:驅逐印記 ", "　NL themarked:維持"]
   },
   "theMarked:Riposte": {
     "NAME": "還擊",
@@ -194,7 +194,7 @@
   "theMarked:ImprovisedWeapon": {
     "NAME": "創意武器",
     "DESCRIPTION": "造成 !D! 點傷害",
-    "EXTENDED_DESCRIPTION": [" NL 當這張牌產生時，獲得隨機效果"," NL 抽", " 張牌", " 張牌", " NL 獲得 [E]", " [E]", " NL 給予", " 層 易傷", " 層 虛弱", " NL 消耗"]
+    "EXTENDED_DESCRIPTION": [" NL 當這張牌產生時，獲得隨機效果"," NL 抽", " 張牌", " 張牌", " NL 獲得 [E]", "獲得 [E]  [E]", " NL 給予", " 層 易傷", " 層 虛弱", " NL 消耗"]
   },
   "theMarked:Improvise": {
     "NAME": "即興發揮",

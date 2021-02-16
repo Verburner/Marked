@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theMarked.DefaultMod;
 import theMarked.characters.TheMarked;
+import theMarked.powers.OpportunistPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
@@ -43,13 +44,13 @@ public class Opportunist extends AbstractDynamicCard {
     public Opportunist() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        //this.cardsToPreview = new Riposte();
+        this.cardsToPreview = new Riposte();
     }
     
     // Actions the card should do.
     @Override
     public void use(final AbstractPlayer p, final AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p,new theMarked.powers.OpportunistPower(p,p,1),1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p,new OpportunistPower(p,p,1),1));
     }
 
     //Upgraded stats.

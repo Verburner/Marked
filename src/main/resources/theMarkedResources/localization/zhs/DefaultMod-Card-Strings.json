@@ -166,8 +166,8 @@
   },
   "theMarked:Parkour": {
     "NAME": "跑酷",
-    "DESCRIPTION": "造成 !D! 点伤害两次。 NL 敏捷使其伤害+1 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害两次。 NL 敏捷使其伤害+2 。"
+    "DESCRIPTION": "造成 !D! 点伤害两次。 NL 敏捷 使其伤害+1 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害两次。 NL 敏捷 使其伤害+2 。"
   },
   "theMarked:ContemptForTheProud": {
     "NAME": "傲气凌人",
@@ -194,7 +194,7 @@
   "theMarked:ImprovisedWeapon": {
     "NAME": "即兴武器",
     "DESCRIPTION": "造成 !D! 点伤害。",
-    "EXTENDED_DESCRIPTION": [" NL 当这张牌生成时，获得随机效果。"," NL 抽", " 张牌。", " 张牌。", " NL 获得 [E] ", " [E] ", " NL 给予 ", " 层 易伤 。", " 层 虚弱 。", " NL 消耗 。"]
+    "EXTENDED_DESCRIPTION": [" NL 当这张牌生成时，获得随机效果。"," NL 抽", " 张牌。", " 张牌。", " NL 获得 [E] 。", " NL 获得 [E] [E] 。", " NL 给予 ", " 层 易伤 。", " 层 虚弱 。", " NL 消耗 。"]
   },
   "theMarked:Improvise": {
     "NAME": "即兴发挥",
@@ -272,9 +272,9 @@
     "UPGRADE_DESCRIPTION": "消耗 1张攻击牌，造成其攻击伤害 X+1 次。"
   },
   "theMarked:DispelDoubt": {
-    "NAME": "无疑无惧 ",
+    "NAME": "无疑无惧",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 牌堆中的所有诅咒牌。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "固有 . NL 造成 !D! 点伤害。 NL 消耗 牌堆中的所有诅咒牌。 NL 消耗 ."
+    "UPGRADE_DESCRIPTION": "固有 。 NL 造成 !D! 点伤害。 NL 消耗 牌堆中的所有诅咒牌。 消耗 。"
   },
   "theMarked:UnarmedFury": {
     "NAME": "赤手空拳",
@@ -294,7 +294,7 @@
   "theMarked:TakeOffHeels": {
     "NAME": "脱鞋子",
     "DESCRIPTION": "获得 !M! 点 敏捷 。 NL themarked:召唤 2张 *即兴武器 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点 敏捷 。 NL themarked:召唤 2张 *即兴武器+ 。NL 消耗 。"
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 敏捷 。 NL themarked:召唤 2张 *即兴武器+ 。 NL 消耗 。"
   },
   "theMarked:BindingBlade": {
     "NAME": "束缚刀刃",
@@ -336,7 +336,7 @@
     "EXTENDED_DESCRIPTION": ["我的充能不足。"]
   },
   "theMarked:Reabsorb": {
-    "NAME": "二次吸收",
+    "NAME": "收刃",
     "DESCRIPTION": "themarked:召唤 并 消耗 *艾莉莎之刃 。 NL 获得等同其攻击加其余数值三倍的 themarked:充能 。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "themarked:召唤 并 消耗 *艾莉莎之刃 。 NL 获得等同其攻击加其余数值三倍的 themarked:充能 。"
   },
@@ -364,7 +364,7 @@
   },
   "theMarked:Parry": {
     "NAME": "剑刃格挡",
-    "DESCRIPTION": "themarked:召唤 *艾莉莎之刃 。 NL 降低20%的伤害。 NL 获得等于新伤害的 格挡 。 NL （获得 !B! 点 格挡 ）",
+    "DESCRIPTION": "themarked:召唤 *艾莉莎之刃 并 NL 降低20%的伤害。 NL 获得等于新伤害的 格挡 。 NL （获得 !B! 点 格挡 ）",
     "UPGRADE_DESCRIPTION": "themarked:召唤 *艾莉莎之刃 。 NL 降低20%的伤害。 NL 获得等于其之前伤害的 格挡 。 NL （获得 !B! 点 格挡 ）"
   },
   "theMarked:Memento": {
@@ -373,7 +373,7 @@
   },
   "theMarked:TheMission": {
     "NAME": "收到任务",
-    "DESCRIPTION": "获得 2 层 themarked:愚蠢 。 NL 若你有负面效果，给予 themarked:放逐 时多给予 2 层。"
+    "DESCRIPTION": "获得 2 层 themarked:愚蠢 。 NL 给予 themarked:放逐 时如果你有负面效果，则多给予 2 层 themarked:放逐 。"
   },
   "theMarked:BiggerThanFate": {
     "NAME": "超越命运",
