@@ -24,6 +24,10 @@ import java.util.Iterator;
 public class ThrowWeaponAction extends AbstractGameAction{
     private AbstractCard card;
     private boolean freeToPlayOnce;
+    private AbstractPlayer p;
+    private AbstractMonster m;
+    private ArrayList<AbstractCard> cannotDuplicate = new ArrayList<>();
+
 
     public ThrowWeaponAction(AbstractPlayer p, AbstractMonster m, int amount, AbstractCard card, boolean freeToPlayOnce)
     {
@@ -35,12 +39,6 @@ public class ThrowWeaponAction extends AbstractGameAction{
         this.card = card;
         this.freeToPlayOnce = freeToPlayOnce;
     }
-
-    private AbstractPlayer p;
-    private AbstractMonster m;
-    private ArrayList<AbstractCard> cannotDuplicate = new ArrayList();
-
-
 
 
     public void update() {

@@ -1,12 +1,12 @@
 {
   "theMarked:ElectrifyAction": {
     "TEXT": [
-     "Select an Attack to exhaust."
+      "選擇一張攻擊牌消耗"
     ]
   },
   "theMarked:ThrowWeaponAction": {
     "TEXT": [
-      "exhaust."
+      "消耗"
     ]
   }
 }
