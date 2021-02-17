@@ -77,7 +77,7 @@
   },
   "theMarked:OpportunistPower": {
     "NAME": "机会主义者",
-    "DESCRIPTIONS": ["每回合第一次格挡超过 6 点伤害时，放 #b", " 张 *反击 到手牌"]
+    "DESCRIPTIONS": ["每回合第一次格挡超过 6 点伤害时，将 #b", " 张 #y还击 加入手牌"]
   },
   "theMarked:CreepingChasmPower": {
     "NAME": "裂缝蔓延",
