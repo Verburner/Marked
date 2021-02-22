@@ -39,7 +39,7 @@ public class ShockingTouch extends AbstractDynamicCard {
 
     private static final int COST = 0;
     private static final int DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 4;
+    private static final int UPGRADE_PLUS_DMG = 5;
     private static final int MAGIC = 1;
     private static final int UPGRADE_PLUS_MAGIC = 1;
 

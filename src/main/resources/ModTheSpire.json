@@ -4,7 +4,7 @@
   "author_list": ["Verburner"],
   "credits": "Basemod, ModTheSpire, Julia Karamell, luke871016, #modding, further credit is given on the Workshop page",
   "description": "Adds a new character based on a fantasy novel by Julia Karamell. ",
-  "version": "1.28",
+  "version": "1.29",
   "sts_version": "${SlayTheSpire.version}",
   "mts_version": "${ModTheSpire.version}",
   "dependencies": ["basemod", "stslib"],
