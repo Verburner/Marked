@@ -52,7 +52,7 @@
     "NAME": "青銅刀",
     "FLAVOR": "埃本納茲最厲害的鐵匠打造的產品。",
     "DESCRIPTIONS": [
-      "取代 #y靜置鎖鍊。 每回合你的第一張攻擊牌額外造成 #b10 點傷害"
+      "取代 #y靜置鎖鍊 NL 每回合開始時，獲得 #b10 層 #y活力"
     ]
   },
   "theMarked:Eyepatch": {
@@ -66,7 +66,7 @@
     "NAME": "發條",
     "FLAVOR": "赫魯迪亞最不受歡迎的職業的暱稱之一",
     "DESCRIPTIONS": [
-      "每當你洗牌，獲得 #b10 點充能"
+      "每當你洗牌，獲得 #b10 點 #y充能"
     ]
   },
   "theMarked:SpiritSword": {
