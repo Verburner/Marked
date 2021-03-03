@@ -4,8 +4,8 @@
           "DESCRIPTIONS": ["目前擁有 #b", " 點，攻擊牌一次最多耗費6點充能"]
   },
   "theMarked:BanishPower": {
-    "NAME": "驅逐印記",
-    "DESCRIPTIONS": ["如果疊加到 #b", " 層，移除所有驅逐印記並造成 #b50 點傷害"]
+    "NAME": "驅逐",
+    "DESCRIPTIONS": ["如果疊加到 #b", " 層，移除所有驅逐並造成 #b50 點傷害"]
   },
   "theMarked:BanishResistancePower": {
     "NAME": "驅逐抗性",
@@ -29,7 +29,7 @@
   },
     "theMarked:HeritagePower": {
       "NAME": "遺留",
-      "DESCRIPTIONS": ["當你給予敵人驅逐印記，獲得 #b", " 點格擋"]
+      "DESCRIPTIONS": ["當你給予敵人驅逐，獲得 #b", " 點格擋"]
   },
     "theMarked:NextTurnDamage": {
       "NAME": "下回合傷害",
@@ -37,11 +37,11 @@
   },
     "theMarked:ChallengedPower": {
     "NAME": "挑戰",
-    "DESCRIPTIONS": ["受到攻擊時，失去 #b", " 點力量直到回合結束"]
+    "DESCRIPTIONS": ["受到攻擊傷害時，本回合降低此目標的攻擊力 #b", " 點"]
   },
-  "theMarked:SummonPower": {
-  "NAME": "越挫越勇",
-  "DESCRIPTIONS": ["當你獲得負面效果，獲得 #b", " 點力量"]
+    "theMarked:SummonPower": {
+    "NAME": "越挫越勇",
+    "DESCRIPTIONS": ["當你獲得負面效果，獲得 #b", " 點力量"]
   },
   "theMarked:AdeptPower": {
     "NAME": "魔力型態",
@@ -65,7 +65,7 @@
   },
   "theMarked:DeterminationPower": {
     "NAME": "決心",
-    "DESCRIPTIONS": ["每回合第一次給予驅逐印記時，抽 #b","每回合第一次 "," 給予驅逐印記時，抽 #b", " 張牌", "?"]
+    "DESCRIPTIONS": ["每回合第一次給予驅逐時，抽 #b","每回合第一次 "," 給予驅逐時，抽 #b", " 張牌", "?"]
   },
   "theMarked:GodGivenPower": {
     "NAME": "神力",
@@ -73,7 +73,7 @@
   },
   "theMarked:MysticalPower": {
     "NAME": "神秘武庫",
-    "DESCRIPTIONS": ["一回合打出 3 張攻擊牌後，給予所有敵人 #b", " 層驅逐。 NL 獲得等同於敵人驅逐印記層數總和的充能"]
+    "DESCRIPTIONS": ["一回合打出 3 張攻擊牌後，給予所有敵人 #b", " 層驅逐。"]
   },
   "theMarked:OpportunistPower": {
     "NAME": "機會主義者",
@@ -89,7 +89,7 @@
   },
   "theMarked:MissionPower": {
     "NAME": "收到任務",
-    "DESCRIPTIONS": ["當你給予驅逐印記並且有負面效果時，多給予 #b", " 層"]
+    "DESCRIPTIONS": ["當你給予驅逐並且有負面效果時，多給予 #b", " 層"]
   },
   "theMarked:MuscleMemoryPower": {
     "NAME": "肌肉記憶",
