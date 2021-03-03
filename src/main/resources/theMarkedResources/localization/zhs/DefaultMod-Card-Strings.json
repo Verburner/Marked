@@ -14,12 +14,12 @@
   "theMarked:AlyssasBlade": {
     "NAME": "艾莉莎之刃",
     "DESCRIPTION": "造成 !D! 点伤害。",
-    "EXTENDED_DESCRIPTION": [" NL 给予 !M! 层 虚弱 。", " NL 给予 !theMarked:SecondMagic! 层 themarked:放逐 。", " NL themarked:维持 。"]
+    "EXTENDED_DESCRIPTION": [" NL 给予 !M! 层 虚弱 。", " NL 给予 !theMarked:SecondMagic! 层 themarked:放逐 。", " NL themarked:导体 。"]
   },
   "theMarked:MirrorBlade": {
     "NAME": "镜像之刃",
     "DESCRIPTION": "造成 !D! 点伤害 ",
-    "EXTENDED_DESCRIPTION": ["NL 给予 !M! 层 虚弱 。", "NL 给予 !theMarked:SecondMagic! 层 themarked:放逐 。", "NL themarked:维持 。"]
+    "EXTENDED_DESCRIPTION": ["NL 给予 !M! 层 虚弱 。", "NL 给予 !theMarked:SecondMagic! 层 themarked:放逐 。", "NL themarked:导体 。"]
   },
   "theMarked:Riposte": {
     "NAME": "还击",
@@ -31,7 +31,7 @@
   },
   "theMarked:Circuit": {
     "NAME": "回路",
-    "DESCRIPTION": "造成 !D! 点伤害。 这张牌会使用所有 themarked:充能 。 NL themarked:维持 。 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL themarked:导体 。 NL 消耗 。"
   },
   "theMarked:SwordAndMagic": {
     "NAME": "剑与魔法",
@@ -142,7 +142,7 @@
   },
   "theMarked:Aftermath": {
     "NAME": "战果",
-    "DESCRIPTION": "本回合每打出过 1 张攻击牌，获得 !M! 点 themarked:充能 。 NL （ !theMarked:SecondMagic! 张）"
+    "DESCRIPTION": "获得 !M! 点 themarked:充能。 NL 本回合每打出过 1 张攻击牌，再获得 !M! 点 themarked:充能 。 NL （ !theMarked:SecondMagic! 张）"
   },
   "theMarked:KeepCalmAndFight": {
     "NAME": "沉着应战",
@@ -154,11 +154,11 @@
   },
   "theMarked:ShockingTouch": {
     "NAME": "触电",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予自身与目标 !M! 层 易伤 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予自身与目标 !M! 层 易伤 。 NL themarked:导体 。"
   },
   "theMarked:LightningStrikesTwice": {
     "NAME": "完美暴风",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 下回合，再造成 !D! 点伤害。 NL themarked:维持 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 下回合，再造成 !D! 点伤害。 NL themarked:导体 。"
   },
   "theMarked:TunnelVision": {
     "NAME": "以管窥天",
@@ -175,7 +175,7 @@
   },
   "theMarked:CreepingChasm": {
     "NAME": "裂缝蔓延",
-    "DESCRIPTION": "耗费 !theMarked:SecondMagic! 点 themarked:充能 才能打出。 NL 下个回合对所有敌人造成 !M! 点伤害。 NL 消耗 。",
+    "DESCRIPTION": "耗费 4 点 themarked:充能 才能打出。 NL 给予所有敌人 !theMarked:SecondMagic! 层 虚弱 。 NL 下个回合对所有敌人造成 !M! 点伤害。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": ["我的充能不足。"]
   },
   "theMarked:Convert": {
@@ -324,7 +324,7 @@
   },
   "theMarked:MysticalArsenal": {
     "NAME": "神秘武库",
-    "DESCRIPTION": "一回合内每打出3张攻击牌，给予所有敌人 !M! 层 themarked:放逐 并获得等同于敌人 themarked:放逐 总和的 themarked:充能 。"
+    "DESCRIPTION": "一回合内每打出3张攻击牌，给予所有敌人 !M! 层 themarked:放逐 。"
   },
   "theMarked:Electrify": {
     "NAME": "通电",
@@ -342,7 +342,7 @@
   },
   "theMarked:OneWithTheBlade": {
     "NAME": "带刀之人",
-    "DESCRIPTION": "themarked:召唤 *艾莉莎之刃 。 NL 赋予其 themarked:维持 。 NL 获得 !M! 点 themarked:充能 。 NL 消耗 。"
+    "DESCRIPTION": "themarked:召唤 *艾莉莎之刃 。 NL 赋予其 themarked:导体 。 NL 获得 !M! 点 themarked:充能 。 NL 消耗 。"
   },
   "theMarked:Abjuration": {
     "NAME": "放逐出境",
