@@ -14,12 +14,12 @@
   "theMarked:AlyssasBlade": {
     "NAME": "Alyssas Klinge",
     "DESCRIPTION": "Verursache !D! Schaden. ",
-    "EXTENDED_DESCRIPTION": ["NL Wende !M! Schwach an. ", "NL Wende !theMarked:SecondMagic! themarked:Verbannen an. ", "NL themarked:Behalten."]
+    "EXTENDED_DESCRIPTION": ["NL Wende !M! Schwach an. ", "NL Wende !theMarked:SecondMagic! themarked:Verbannen an. ", "NL themarked:Leiter."]
   },
   "theMarked:MirrorBlade": {
     "NAME": "Spiegelklinge",
     "DESCRIPTION": "Verursache !D! Schaden. ",
-    "EXTENDED_DESCRIPTION": ["NL Wende !M! Schwach an. ", "NL Wende !theMarked:SecondMagic! themarked:Verbannen an. ", "NL themarked:Behalten."]
+    "EXTENDED_DESCRIPTION": ["NL Wende !M! Schwach an. ", "NL Wende !theMarked:SecondMagic! themarked:Verbannen an. ", "NL themarked:Leiter."]
   },
   "theMarked:Riposte": {
     "NAME": "Konter",
@@ -31,7 +31,7 @@
   },
   "theMarked:Circuit": {
     "NAME": "Stromkreislauf",
-    "DESCRIPTION": "Verursacht !D! Schaden. NL Verwendet JEGLICHE themarked:Ladung und themarked:behält sie. NL Erschöpft. "
+    "DESCRIPTION": "Verursacht !D! Schaden. NL Leiter. NL Erschöpft. "
   },
   "theMarked:SwordAndMagic": {
     "NAME": "Schwert und Magie",
@@ -98,7 +98,7 @@
   },
   "theMarked:ChainLightning": {
     "NAME": "Kettenblitz",
-    "DESCRIPTION": "Verursache !D! Schaden am Ziel und halb so viel an allen anderen Gegnern. "
+    "DESCRIPTION": "Verursache !D! Schaden am Ziel und !M! % dieses Schadens an allen anderen Gegnern. NL Leiter. "
   },
   "theMarked:ResourceFulStrike": {
     "NAME": "Findiger Schlag",
@@ -142,7 +142,7 @@
   },
   "theMarked:Aftermath": {
     "NAME": "Nachspiel",
-    "DESCRIPTION": "Erhalte !M! themarked:Ladung für jeden in dieser Runde gespielten Angriff. NL Angriffe gespielt: !theMarked:SecondMagic! "
+    "DESCRIPTION": "Erhalte !M! themarked:Ladung. NL Erhalte !M! themarked:Ladung für jeden in dieser Runde gespielten Angriff. NL Angriffe gespielt: !theMarked:SecondMagic! "
   },
   "theMarked:KeepCalmAndFight": {
     "NAME": "Ruhig Bleiben und Kämpfen",
@@ -154,11 +154,11 @@
   },
   "theMarked:ShockingTouch": {
     "NAME": "Elektrisierender Griff",
-    "DESCRIPTION": "Verursache !D! Schaden. NL Wende !M! Verwundbar an dir UND dem Ziel an. "
+    "DESCRIPTION": "Verursache !D! Schaden. NL Wende !M! Verwundbar an dir UND dem Ziel an. NL Leiter. "
   },
   "theMarked:LightningStrikesTwice": {
     "NAME": "Perfekter Sturm",
-    "DESCRIPTION": "Verursache !D! Schaden. NL In der nächsten Runde, verursache diesen Schaden noch einmal. NL themarked:Behalten. "
+    "DESCRIPTION": "Verursache !D! Schaden. NL In der nächsten Runde, verursache diesen Schaden noch einmal. NL themarked:Leiter. "
   },
   "theMarked:TunnelVision": {
     "NAME": "Tunnelblick",
@@ -175,7 +175,7 @@
   },
   "theMarked:CreepingChasm": {
     "NAME": "Blitzwelle",
-    "DESCRIPTION": "Benötigt !theMarked:SecondMagic! themarked:Ladung. NL In der nächsten Runde, verursache !M! Schaden an allen Gegnern. NL Erschöpft. ",
+    "DESCRIPTION": "Benötigt 4 themarked:Ladung. NL Wende !theMarked:SecondMagic! Schwach an allen Gegnern an. NL In der nächsten Runde, verursache !M! Schaden an allen Gegnern. ",
     "EXTENDED_DESCRIPTION": ["Ich habe nicht genug Ladung. "]
   },
   "theMarked:Convert": {
@@ -324,7 +324,7 @@
   },
   "theMarked:MysticalArsenal": {
     "NAME": "Mystisches Arsenal",
-    "DESCRIPTION": "Wenn du 3 Angriffe in einer Runde spielst, wende !M! themarked:Verbannen an allen Gegnern an. NL Erhalte themarked:Ladung gleich themarked:Verbannen auf allen Zielen. "
+    "DESCRIPTION": "Wenn du 3 Angriffe in einer Runde spielst, wende !M! themarked:Verbannen an allen Gegnern an. "
   },
   "theMarked:Electrify": {
     "NAME": "Elektrisch machen",

@@ -13,7 +13,7 @@ import theMarked.powers.BanishPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class BanishingStrike extends AbstractDynamicCard {
+public class BanishingStrike extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,6 +25,7 @@ public class BanishingStrike extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(BanishingStrike.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_BanishingStrikes.png");
+    public static final String IMG_beta = makeCardPath("Attack_BanishingStrikes_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -48,6 +49,7 @@ public class BanishingStrike extends AbstractDynamicCard {
 
     public BanishingStrike() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
         baseMagicNumber = MAGIC_NUMBER;
         magicNumber = MAGIC_NUMBER;

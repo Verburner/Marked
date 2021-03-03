@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theMarked.DefaultMod;
 import theMarked.cards.*;
+import theMarked.relics.Gun;
 import theMarked.util.TextureLoader;
 
 import static theMarked.DefaultMod.makePowerPath;
@@ -56,7 +57,7 @@ public class ChargePower extends AbstractPower implements CloneablePowerInterfac
     public float atDamageGive(float damage, DamageInfo.DamageType type, AbstractCard card) {
         int bdmg = this.amount;
 
-        if (bdmg>6 && !(card instanceof Circuit) && !(card instanceof Electrocute))
+        if (bdmg>6 && !(card instanceof Electrocute || this.hasConductor(card)))
         {
             bdmg = 6;
         }
@@ -71,24 +72,27 @@ public class ChargePower extends AbstractPower implements CloneablePowerInterfac
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK) {
             this.flash();
-            if (!(card instanceof Circuit || this.owner.hasPower("theMarked:MaelstromPower") || card instanceof AlyssasBlade && card.baseBlock == 1 || card instanceof MirrorBlade && card.baseBlock == 1 || card instanceof LightningStrikesTwice))
+            if ((!this.owner.hasPower(MaelstromPower.POWER_ID) && !this.hasConductor(card)))
             {
-                if (AbstractDungeon.player.hasRelic("theMarked:Gun"))
+                if (AbstractDungeon.player.hasRelic(Gun.ID))
                 {
-                    this.addToBot(new ReducePowerAction(this.owner, this.owner, "theMarked:Charge",3));
-                    AbstractDungeon.player.getRelic("theMarked:Gun").flash();
+                    this.addToBot(new ReducePowerAction(this.owner, this.owner, ChargePower.POWER_ID,3));
+                    AbstractDungeon.player.getRelic(Gun.ID).flash();
                 }
-                else this.addToBot(new ReducePowerAction(this.owner, this.owner, "theMarked:Charge",6));
+                else this.addToBot(new ReducePowerAction(this.owner, this.owner, ChargePower.POWER_ID,6));
             }
         }
     }
 
-    // Note: If you want to apply an effect when a power is being applied you have 3 options:
-    //onInitialApplication is "When THIS power is first applied for the very first time only."
-    //onApplyPower is "When the owner applies a power to something else (only used by Sadistic Nature)."
-    //onReceivePowerPower from StSlib is "When any (including this) power is applied to the owner."
-
-    // Update the description when you apply this power. (i.e. add or remove an "s" in keyword(s))
+    private boolean hasConductor(AbstractCard card)
+    {
+        return (card instanceof Circuit ||
+                card instanceof AlyssasBlade && card.baseBlock == 1 ||
+                card instanceof MirrorBlade && card.baseBlock == 1 ||
+                card instanceof LightningStrikesTwice ||
+                card instanceof ShockingTouch ||
+                card instanceof ChainLightning);
+    }
     @Override
     public void updateDescription() {
         description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];

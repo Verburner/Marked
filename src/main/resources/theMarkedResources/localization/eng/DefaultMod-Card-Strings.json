@@ -14,12 +14,12 @@
   "theMarked:AlyssasBlade": {
     "NAME": "Alyssa's Blade",
     "DESCRIPTION": "Deal !D! damage. ",
-    "EXTENDED_DESCRIPTION": ["NL Apply !M! Weak. ", "NL Apply !theMarked:SecondMagic! themarked:Banish. ", "NL themarked:Preserve."]
+    "EXTENDED_DESCRIPTION": ["NL Apply !M! Weak. ", "NL Apply !theMarked:SecondMagic! themarked:Banish. ", "NL themarked:Conductor."]
   },
   "theMarked:MirrorBlade": {
     "NAME": "Mirror Blade",
     "DESCRIPTION": "Deal !D! damage. ",
-    "EXTENDED_DESCRIPTION": ["NL Apply !M! Weak. ", "NL Apply !theMarked:SecondMagic! themarked:Banish. ", "NL themarked:Preserve."]
+    "EXTENDED_DESCRIPTION": ["NL Apply !M! Weak. ", "NL Apply !theMarked:SecondMagic! themarked:Banish. ", "NL themarked:Conductor."]
   },
   "theMarked:Riposte": {
     "NAME": "Riposte",
@@ -31,7 +31,7 @@
   },
   "theMarked:Circuit": {
     "NAME": "Circuit",
-    "DESCRIPTION": "Deal !D! damage. NL Uses ALL Charge and themarked:preserves it. NL Exhaust. "
+    "DESCRIPTION": "Deal !D! damage. NL themarked:Conductor. NL Exhaust. "
   },
   "theMarked:SwordAndMagic": {
     "NAME": "Sword and Magic",
@@ -98,7 +98,7 @@
   },
   "theMarked:ChainLightning": {
     "NAME": "Chain Lightning",
-    "DESCRIPTION": "Deal !D! damage to a target and half as much to other enemies. "
+    "DESCRIPTION": "Deal !D! damage to a target and !M! % of this damage to other enemies. NL Conductor. "
   },
   "theMarked:ResourceFulStrike": {
     "NAME": "Resourceful Strike",
@@ -142,7 +142,7 @@
   },
   "theMarked:Aftermath": {
     "NAME": "Aftermath",
-    "DESCRIPTION": "Gain !M! themarked:Charge for each attack played this turn. NL Attacks played: !theMarked:SecondMagic! "
+    "DESCRIPTION": "Gain !M! themarked:Charge. NL Gain !M! themarked:Charge for each attack played this turn. NL Attacks played: !theMarked:SecondMagic! "
   },
   "theMarked:KeepCalmAndFight": {
     "NAME": "Keep Calm and Fight",
@@ -154,11 +154,11 @@
   },
   "theMarked:ShockingTouch": {
     "NAME": "Shocking Touch",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable to you AND the target. "
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable to you AND the target. NL Conductor. "
   },
   "theMarked:LightningStrikesTwice": {
     "NAME": "Perfect Storm",
-    "DESCRIPTION": "Deal !D! damage. NL Next turn, deal this damage again. themarked:Preserve."
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, deal this damage again. themarked:Conductor."
   },
   "theMarked:TunnelVision": {
     "NAME": "Tunnel Vision",
@@ -175,7 +175,7 @@
   },
   "theMarked:CreepingChasm": {
     "NAME": "Creeping Chasm",
-    "DESCRIPTION": "Requires !theMarked:SecondMagic! themarked:Charge to play. NL Next turn, deal !M! damage to all enemies. NL Exhaust.",
+    "DESCRIPTION": "Requires 4 themarked:Charge to play. NL Apply !theMarked:SecondMagic! Weak to all enemies. NL Next turn, deal !M! damage to all enemies. ",
     "EXTENDED_DESCRIPTION": ["I don't have enough Charge. "]
   },
   "theMarked:Convert": {
@@ -324,7 +324,7 @@
   },
   "theMarked:MysticalArsenal": {
     "NAME": "Mystical Arsenal",
-    "DESCRIPTION": "When you play 3 attacks in the same turn, apply !M! themarked:Banish to all enemies. NL Gain themarked:Charge equal to the Banish stacks on all enemies. "
+    "DESCRIPTION": "When you play 3 attacks in the same turn, apply !M! themarked:Banish to all enemies. "
   },
   "theMarked:Electrify": {
     "NAME": "Electrify",
@@ -342,7 +342,7 @@
   },
   "theMarked:OneWithTheBlade": {
     "NAME": "One with the Blade",
-    "DESCRIPTION": "themarked:Summon *Alsssa's *Blade and give it themarked:Preserve. NL Gain !M! themarked:Charge. NL Exhaust."
+    "DESCRIPTION": "themarked:Summon *Alsssa's *Blade and give it themarked:Conductor. NL Gain !M! themarked:Charge. NL Exhaust."
   },
   "theMarked:Abjuration": {
     "NAME": "Abjuration",

@@ -6,7 +6,9 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import theMarked.DefaultMod;
@@ -29,7 +31,6 @@ public class ChainLightning extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(ChainLightning.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_ChainLightning.png");
-
     // /TEXT DECLARATION/
 
 
@@ -41,8 +42,10 @@ public class ChainLightning extends AbstractDynamicCard {
     public static final CardColor COLOR = TheMarked.Enums.MARKED_GENTA;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 8;
     private static final int UPGRADE_PLUS_DMG = 2;
+    private static final int PERCENTAGE = 50;
+    private static final int PERCENTAGE_PLUS = 25;
 
 
     public int specialDamage;
@@ -52,6 +55,8 @@ public class ChainLightning extends AbstractDynamicCard {
     public ChainLightning() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        baseMagicNumber = PERCENTAGE;
+        magicNumber = PERCENTAGE;
     }
 
     // Actions the card should do.
@@ -62,16 +67,14 @@ public class ChainLightning extends AbstractDynamicCard {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
                         AbstractGameAction.AttackEffect.LIGHTNING));
-        Iterator var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         this.addToTop(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.0F));
         this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
 
-        while(var3.hasNext()) {
-            AbstractMonster mo = (AbstractMonster)var3.next();
-            if (mo!=m && !mo.isDead) {
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (mo != m && !mo.isDead) {
                 this.calculateCardDamage(mo);
                 AbstractDungeon.actionManager.addToBottom(
-                        new DamageAction(mo, new DamageInfo(p, damage / 2, damageTypeForTurn),
+                        new DamageAction(mo, new DamageInfo(p, damage * (magicNumber/100), damageTypeForTurn),
                                 AbstractGameAction.AttackEffect.LIGHTNING, true));
                 this.addToTop(new VFXAction(new LightningEffect(mo.drawX, mo.drawY), 0.0F));
                 this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
@@ -85,6 +88,7 @@ public class ChainLightning extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(PERCENTAGE_PLUS);
             initializeDescription();
         }
     }

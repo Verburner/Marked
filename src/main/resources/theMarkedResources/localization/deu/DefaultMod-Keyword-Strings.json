@@ -55,14 +55,14 @@
       "Herausfoderung",
       "herausfordern"
     ],
-    "DESCRIPTION": "Verringert die Stärke des Ziels bis zum Ende des Zuges wenn es Schaden nimmt."
+    "DESCRIPTION": "Verringert den Schaden den das Ziel in dieser Runde verursacht, wenn es ungeblockten Angriffsschaden nimmt. "
   },
   {
     "NAMES": [
       "Leiter",
       "leiter"
     ],
-    "DESCRIPTION": "Verwendet jegliche vorhandene Ladung."
+    "DESCRIPTION": "Dieser Angriff verwendet alle Stacks von Ladung, ohne diese aufzubrauchen."
   },
   {
     "NAMES": [
@@ -73,7 +73,7 @@
       "Behält",
       "behält"
     ],
-    "DESCRIPTION": "Profitiert von Ladung, ohne diese zu verbrauchen. "
+    "DESCRIPTION": "Stacks von Ladung, die von dieser Karte verwendet werden, werden nicht aufgebraucht. "
   },
   {
     "NAMES": [

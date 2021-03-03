@@ -37,7 +37,7 @@
   },
     "theMarked:ChallengedPower": {
     "NAME": "Herausforderung",
-    "DESCRIPTIONS": ["Wenn das Ziel Schaden durch einen Anfriff nimmt, verliert es #b", " Stärke bis zum Ende der Runde. "]
+    "DESCRIPTIONS": ["Wenn das Ziel Schaden durch einen Anfriff nimmt, verursacht es #b", " weniger Schaden bis zum Ende der Runde. "]
   },
   "theMarked:SummonPower": {
   "NAME": "Zähigkeit",
@@ -73,7 +73,7 @@
   },
   "theMarked:MysticalPower": {
     "NAME": "Mystisches Arsenal",
-    "DESCRIPTIONS": ["Wenn du in der selben Runde 3 Angriffe spielst, wende ", " Verbannen an allen Gegnern an und erhalte Aufladung gleich Verbannen auf allen Zielen."]
+    "DESCRIPTIONS": ["Wenn du in der selben Runde 3 Angriffe spielst, wende ", " Verbannen an allen Gegnern an. "]
   },
   "theMarked:OpportunistPower": {
     "NAME": "Opportunist",

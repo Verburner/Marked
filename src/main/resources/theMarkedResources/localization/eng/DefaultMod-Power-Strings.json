@@ -37,7 +37,7 @@
   },
     "theMarked:ChallengedPower": {
     "NAME": "Challenge",
-    "DESCRIPTIONS": ["When damaged by an attack, lose #b", " #yStrength until the end of turn. "]
+    "DESCRIPTIONS": ["When damaged by an attack decrease the damage of the target's attacks by #b", " this turn. "]
   },
   "theMarked:SummonPower": {
   "NAME": "Toughness",
@@ -73,7 +73,7 @@
   },
   "theMarked:MysticalPower": {
     "NAME": "Mystical Arsenal",
-    "DESCRIPTIONS": ["If you play #b3 attacks in the same turn, apply #b", " #yBanish to all enemies. NL Gain #yCharge equal to the #yBanish stacks on all enemies."]
+    "DESCRIPTIONS": ["If you play #b3 attacks in the same turn, apply #b", " #yBanish to all enemies. "]
   },
   "theMarked:OpportunistPower": {
     "NAME": "Opportunist",

@@ -14,7 +14,7 @@
   "theMarked:AlyssasBlade": {
     "NAME": "艾莉莎之刃",
     "DESCRIPTION": "造成 !D! 点伤害。",
-    "EXTENDED_DESCRIPTION": ["NL 给予 !M! 层 虚弱 。", "NL 给予 !theMarked:SecondMagic! 层 themarked:放逐 。", "NL themarked:维持 。"]
+    "EXTENDED_DESCRIPTION": [" NL 给予 !M! 层 虚弱 。", " NL 给予 !theMarked:SecondMagic! 层 themarked:放逐 。", " NL themarked:维持 。"]
   },
   "theMarked:MirrorBlade": {
     "NAME": "镜像之刃",

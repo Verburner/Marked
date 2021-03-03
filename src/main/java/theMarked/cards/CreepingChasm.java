@@ -4,8 +4,10 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import theMarked.DefaultMod;
 import theMarked.actions.CastAnimationAction;
 import theMarked.characters.TheMarked;
@@ -40,10 +42,10 @@ public class CreepingChasm extends AbstractDynamicCard {
     public static final CardColor COLOR = TheMarked.Enums.MARKED_GENTA;
 
     private static final int COST = 1;
-    private static final int MAGIC_NUMBER = 20;
-    private static final int UPGRADE_PLUS_MAGIC = 5;
-    private static final int MAGIC2 = 4;
-    private static final int UPGRADE_MAGIC2 = -2;
+    private static final int MAGIC_NUMBER = 17;
+    private static final int UPGRADE_PLUS_MAGIC = 3;
+    private static final int MAGIC2 = 1;
+    private static final int UPGRADE_MAGIC2 = 1;
 
 
     // /STAT DECLARATION/
@@ -64,9 +66,16 @@ public class CreepingChasm extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
 
         this.addToBot(new CastAnimationAction());
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters)
+        {
+            if (!mo.isDead)
+            {
+                this.addToBot(new ApplyPowerAction(p,mo,new WeakPower(mo,defaultSecondMagicNumber,false)));
+            }
+        }
         this.addToBot(new ApplyPowerAction(p, p, new CreepingChasmPower(p,p, 1, this.magicNumber), this.magicNumber));
         if (!p.hasPower("theMarked:MaelstromPower")) {
-            this.addToBot(new ReducePowerAction(p, p, ("theMarked:Charge"), defaultSecondMagicNumber));
+            this.addToBot(new ReducePowerAction(p, p, ("theMarked:Charge"), 4));
         }
     }
 
@@ -75,7 +84,7 @@ public class CreepingChasm extends AbstractDynamicCard {
         boolean canUse = super.canUse(p, m);
         if (!canUse) {
             return false;
-        } else if (!p.hasPower("theMarked:Charge") || p.getPower("theMarked:Charge").amount < defaultSecondMagicNumber) {
+        } else if (!p.hasPower("theMarked:Charge") || p.getPower("theMarked:Charge").amount < 4) {
             this.cantUseMessage = EXTENDED_DESCRIPTION;
             return false;
         } else {
@@ -89,7 +98,7 @@ public class CreepingChasm extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
-            //upgradeDefaultSecondMagicNumber(UPGRADE_MAGIC2);
+            upgradeDefaultSecondMagicNumber(UPGRADE_MAGIC2);
             initializeDescription();
         }
     }

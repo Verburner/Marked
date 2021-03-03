@@ -55,14 +55,14 @@
       "Challenge",
       "challenge"
     ],
-    "DESCRIPTION": "Reduces the target's Strength until the end of turn each time they take unblocked attack damage."
+    "DESCRIPTION": "Reduces the damage of the target's attacks until the end of turn whenever they receive unblocked attack damage. "
   },
   {
     "NAMES": [
       "Conductor",
       "conductor"
     ],
-    "DESCRIPTION": "Uses ALL Charge."
+    "DESCRIPTION": "Benefits from all stacks of Charge without consuming them."
   },
   {
     "NAMES": [
@@ -73,7 +73,7 @@
       "Preserving",
       "preserving"
     ],
-    "DESCRIPTION": "Gains bonus from Charge without expending it. "
+    "DESCRIPTION": "Stacks of Charge used by this card are not consumed. "
   },
   {
     "NAMES": [

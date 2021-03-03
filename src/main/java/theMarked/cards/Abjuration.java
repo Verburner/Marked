@@ -90,27 +90,20 @@ public class Abjuration extends AbstractMarkedCard {
         this.addToBot(new CastAnimationAction());
         this.addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
                 AbstractGameAction.AttackEffect.FIRE));
-        this.addToBot(new ApplyPowerAction(m, p, new BanishPower(m, p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
         if (m.hasPower(MinionPower.POWER_ID)) {
-            this.addToBot(new ApplyPowerAction(m, p, new BanishPower(m, p, 10 - this.magicNumber), 10 - this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            this.addToBot(new ApplyPowerAction(m, p, new BanishPower(m, p, 10), 10, true, AbstractGameAction.AttackEffect.NONE));
+        }
+        else this.addToBot(new ApplyPowerAction(m, p, new BanishPower(m, p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
 
-            Iterator var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-
-            while (var3.hasNext()) {
-                AbstractMonster mo = (AbstractMonster) var3.next();
-                if (!mo.isDead) {
-                    if (this.upgraded && mo.hasPower(MinionPower.POWER_ID) && mo != m) {
-                        this.calculateCardDamage(mo);
-                        this.addToBot(new DamageAction(mo, new DamageInfo(p, damage, damageTypeForTurn),
-                                AbstractGameAction.AttackEffect.FIRE));
-                        this.addToBot(new ApplyPowerAction(m, p, new BanishPower(m, p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-                        this.addToBot(new ApplyPowerAction(mo, p, new BanishPower(mo, p, 10 - this.magicNumber), 10 - this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-                    }
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (!mo.isDead) {
+                if (this.upgraded && mo.hasPower(MinionPower.POWER_ID) && mo != m) {
+                    this.calculateCardDamage(mo);
+                    this.addToBot(new DamageAction(mo, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE, true));
+                    this.addToBot(new ApplyPowerAction(mo, p, new BanishPower(mo, p, 10), 10, true, AbstractGameAction.AttackEffect.NONE));
                 }
             }
         }
-
-
     }
 
     // Upgraded stats.

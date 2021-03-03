@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 import theMarked.DefaultMod;
 import theMarked.actions.BanishChargeAction;
+import theMarked.actions.BanishDamageAction;
 import theMarked.util.TextureLoader;
 
 import java.util.ArrayList;
@@ -68,15 +69,13 @@ public class MysticalPower extends AbstractPower implements CloneablePowerInterf
             if (playedThisTurn>=3)
             {
                 this.flash();
+                this.addToBot(new VFXAction(owner, new BorderLongFlashEffect(Color.PURPLE), 0.0F, true));
 
-                Iterator var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-
-                while(var3.hasNext()) {
-                    AbstractMonster mo = (AbstractMonster)var3.next();
+                for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters)
+                {
                     if (!mo.isDead) {
-                        this.addToBot(new VFXAction(owner, new BorderLongFlashEffect(Color.PURPLE), 0.0F, true));
                         this.addToBot(new ApplyPowerAction(mo, owner, new BanishPower(mo, owner, this.amount), this.amount, true, AbstractGameAction.AttackEffect.NONE));
-                        this.addToBot(new BanishChargeAction(this.owner,mo));
+                        //this.addToBot(new BanishDamageAction(mo));
                     }
                 }
                 playedThisTurn = 0;
