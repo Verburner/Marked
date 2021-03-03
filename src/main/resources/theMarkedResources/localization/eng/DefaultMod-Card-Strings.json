@@ -154,7 +154,7 @@
   },
   "theMarked:ShockingTouch": {
     "NAME": "Shocking Touch",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable to you AND the target. NL Conductor. "
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable to you AND the target. NL themarked:Conductor. "
   },
   "theMarked:LightningStrikesTwice": {
     "NAME": "Perfect Storm",
