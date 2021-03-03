@@ -37,7 +37,7 @@
   },
     "theMarked:ChallengedPower": {
     "NAME": "挑战",
-    "DESCRIPTIONS": ["受到攻击时，本回合失去 #b", " 点 #y力量 。"]
+    "DESCRIPTIONS": ["受到攻击时，本回合的攻击降低 #b", " 点 。"]
   },
     "theMarked:SummonPower": {
     "NAME": "越挫越勇",
@@ -73,7 +73,7 @@
   },
   "theMarked:MysticalPower": {
     "NAME": "神秘武库",
-    "DESCRIPTIONS": ["一回合打出 3 张攻击牌后，给予所有敌人 #b", " 层 #y放逐 。 NL 获得等同于敌人 #y放逐 层数总和的 #y充能"]
+    "DESCRIPTIONS": ["一回合打出 3 张攻击牌后，给予所有敌人 #b", " 层 #y放逐 。"]
   },
   "theMarked:OpportunistPower": {
     "NAME": "机会主义者",
