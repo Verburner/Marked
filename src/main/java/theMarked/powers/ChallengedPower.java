@@ -67,7 +67,7 @@ public class ChallengedPower extends TwoAmountPower implements CloneablePowerInt
             this.addToBot(new ChallengeReduceDamageAction());
             this.amount2 += this.amount;
             this.flash();
-            owner.applyTurnPowers();
+            this.duringTurn();
         }
     }
 

@@ -70,7 +70,7 @@ public class CreepingChasm extends AbstractDynamicCard {
         {
             if (!mo.isDead)
             {
-                this.addToBot(new ApplyPowerAction(p,mo,new WeakPower(mo,defaultSecondMagicNumber,false)));
+                this.addToBot(new ApplyPowerAction(mo,p,new WeakPower(mo,defaultSecondMagicNumber,false)));
             }
         }
         this.addToBot(new ApplyPowerAction(p, p, new CreepingChasmPower(p,p, 1, this.magicNumber), this.magicNumber));

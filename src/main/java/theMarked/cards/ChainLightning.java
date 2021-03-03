@@ -57,6 +57,7 @@ public class ChainLightning extends AbstractDynamicCard {
         baseDamage = DAMAGE;
         baseMagicNumber = PERCENTAGE;
         magicNumber = PERCENTAGE;
+        initializeDescription();
     }
 
     // Actions the card should do.
@@ -74,7 +75,7 @@ public class ChainLightning extends AbstractDynamicCard {
             if (mo != m && !mo.isDead) {
                 this.calculateCardDamage(mo);
                 AbstractDungeon.actionManager.addToBottom(
-                        new DamageAction(mo, new DamageInfo(p, damage * (magicNumber/100), damageTypeForTurn),
+                        new DamageAction(mo, new DamageInfo(p, (int)(damage * ((float)magicNumber/100.0F)), damageTypeForTurn),
                                 AbstractGameAction.AttackEffect.LIGHTNING, true));
                 this.addToTop(new VFXAction(new LightningEffect(mo.drawX, mo.drawY), 0.0F));
                 this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
