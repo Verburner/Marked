@@ -14,12 +14,12 @@
   "theMarked:AlyssasBlade": {
     "NAME": "艾莉莎之刃",
     "DESCRIPTION": "造成 !D! 點傷害 ",
-    "EXTENDED_DESCRIPTION": ["　NL 給予 !M! 層 虛弱 ", "　NL 給予 !theMarked:SecondMagic! 層 themarked:驅逐印記 ", "　NL themarked:維持"]
+    "EXTENDED_DESCRIPTION": ["NL 給予 !M! 層 虛弱 ", "NL 給予 !theMarked:SecondMagic! 層 themarked:驅逐 ", "NL themarked:良導體"]
   },
   "theMarked:MirrorBlade": {
     "NAME": "鏡像之刃",
     "DESCRIPTION": "造成 !D! 點傷害 ",
-    "EXTENDED_DESCRIPTION": ["　NL 給予 !M! 層 虛弱 ", "　NL 給予 !theMarked:SecondMagic! 層 themarked:驅逐印記 ", "　NL themarked:維持"]
+    "EXTENDED_DESCRIPTION": ["NL 給予 !M! 層 虛弱 ", "NL 給予 !theMarked:SecondMagic! 層 themarked:驅逐 ", "NL themarked:良導體"]
   },
   "theMarked:Riposte": {
     "NAME": "還擊",
@@ -31,7 +31,7 @@
   },
   "theMarked:Circuit": {
     "NAME": "迴路",
-    "DESCRIPTION": "造成 !D! 點傷害，這張牌會耗費所有 themarked:充能 NL themarked:維持 NL 消耗"
+    "DESCRIPTION": "造成 !D! 點傷害 NL themarked:良導體 NL 消耗"
   },
   "theMarked:SwordAndMagic": {
     "NAME": "劍與魔法",
@@ -51,16 +51,16 @@
   },
   "theMarked:HeightenedSenses": {
     "NAME": "感知敏銳",
-    "DESCRIPTION": "戰鬥中的每個敵人為你獲得 !B! 點格擋"
+    "DESCRIPTION": "當前每有一名敵人，獲得 !B! 點格擋"
   },
   "theMarked:BanishingWave": {
     "NAME": "驅逐波動",
-    "DESCRIPTION": "對所有敵人造成 !D! 點傷害並給予 !M! 層 themarked:驅逐印記 NL 消耗",
-    "UPGRADE_DESCRIPTION": "對所有敵人造成 !D! 點傷害並給予 !M! 層 themarked:驅逐印記"
+    "DESCRIPTION": "對所有敵人造成 !D! 點傷害並給予 !M! 層 themarked:驅逐 NL 消耗",
+    "UPGRADE_DESCRIPTION": "對所有敵人造成 !D! 點傷害並給予 !M! 層 themarked:驅逐"
   },
   "theMarked:Seal": {
     "NAME": "封印",
-    "DESCRIPTION": "給予 !M! 層 themarked:驅逐印記 NL 若觸發驅逐，退還一半的耗能並將此牌放回手牌中"
+    "DESCRIPTION": "給予 !M! 層 themarked:驅逐 NL 若觸發驅逐，退還一半的耗能並將此牌放回手牌"
   },
   "theMarked:EnhancedHearing": {
     "NAME": "聽覺強化",
@@ -82,7 +82,7 @@
   },
   "theMarked:Heritage": {
     "NAME": "遺留",
-    "DESCRIPTION": "當你給予 themarked:驅逐印記 ，獲得 !M! 點格擋"
+    "DESCRIPTION": "當你給予 themarked:驅逐 ，獲得 !M! 點格擋"
   },
   "theMarked:StartUp": {
     "NAME": "暖身",
@@ -90,7 +90,7 @@
   },
   "theMarked:BanishingStrike": {
     "NAME": "驅逐打擊",
-    "DESCRIPTION": "造成 !D! 點傷害 NL 給予 !M! 層 themarked:驅逐印記 NL 目標的每層 themarked:驅逐印記 會增加此卡的傷害值"
+    "DESCRIPTION": "造成 !D! 點傷害 NL 給予 !M! 層 themarked:驅逐 NL 目標的每層 themarked:驅逐 會增加此卡的傷害值"
   },
   "theMarked:ElectricStrings": {
     "NAME": "雷電之鞭",
@@ -98,7 +98,7 @@
   },
   "theMarked:ChainLightning": {
     "NAME": "連鎖電擊",
-    "DESCRIPTION": "對目標造成 !D! 點傷害 NL 對其餘敵人造成一半的傷害"
+    "DESCRIPTION": "造成 !D! 點傷害 NL 對其餘敵人造成此數值的 !M! % 傷害 NL themarked:良導體"
   },
   "theMarked:ResourceFulStrike": {
     "NAME": "機智打擊",
@@ -107,7 +107,7 @@
   },
   "theMarked:Frustration": {
     "NAME": "挫敗",
-    "DESCRIPTION": "造成 !D! 點傷害 NL 若敵人擁有 themarked:驅逐印記 ，再次造成 !D! 點傷害"
+    "DESCRIPTION": "造成 !D! 點傷害 NL 若敵人擁有 themarked:驅逐 ，再次造成 !D! 點傷害"
   },
   "theMarked:EmpowerWeapon": {
     "NAME": "強化武器",
@@ -138,11 +138,11 @@
   },
   "theMarked:WardOff": {
     "NAME": "迴避",
-    "DESCRIPTION": "給予 !M! 點 themarked:驅逐印記 NL 獲得 !B! 點 格擋 NL 目標的每層 themarked:驅逐印記 會增加此卡的格擋值"
+    "DESCRIPTION": "給予 !M! 點 themarked:驅逐 NL 獲得 !B! 點 格擋 NL 目標的每層 themarked:驅逐 會增加此卡的格擋值"
   },
   "theMarked:Aftermath": {
     "NAME": "戰果",
-    "DESCRIPTION": "  本回合每打出過 1 張攻擊牌，就獲得 !M! 點 themarked:充能 NL (打出的攻擊牌: !theMarked:SecondMagic! 張)"
+    "DESCRIPTION": "獲得 !M! 點 themarked:充能 NL 本回合每打出過1張攻擊牌，額外獲得 !M! 點 themarked:充能 NL ( !theMarked:SecondMagic! 張)"
   },
   "theMarked:KeepCalmAndFight": {
     "NAME": "沉著應戰",
@@ -158,7 +158,7 @@
   },
   "theMarked:LightningStrikesTwice": {
     "NAME": "完美暴風",
-    "DESCRIPTION": "造成 !D! 點傷害 NL 下個回合，再造成 !D! 點傷害 NL themarked:維持"
+    "DESCRIPTION": "造成 !D! 點傷害 NL 下個回合，再造成 !D! 點傷害 NL themarked:良導體"
   },
   "theMarked:TunnelVision": {
     "NAME": "以管窺天",
@@ -175,7 +175,7 @@
   },
   "theMarked:CreepingChasm": {
     "NAME": "裂縫蔓延",
-    "DESCRIPTION": "耗費 !theMarked:SecondMagic! 點 themarked:充能 才能打出 NL 下個回合對所有敵人造成 !M! 點傷害 NL 消耗",
+    "DESCRIPTION": "耗費 4 點 themarked:充能 才能打出 NL 給予所有敵人 !theMarked:SecondMagic! 層 虛弱 NL 下個回合對所有敵人造成 !M! 點傷害",
     "EXTENDED_DESCRIPTION": ["我的充能不足。"]
   },
   "theMarked:Convert": {
@@ -205,7 +205,7 @@
     "DESCRIPTION": "給予1層 *力量 NL 給予 !M! 層 themarked:挑戰 NL 消耗"
   },
   "theMarked:EternalStudent": {
-    "NAME": "職業學生",
+    "NAME": "終生為徒",
     "DESCRIPTION": "themarked:召喚 *艾莉莎之刃 ，增加其傷害 !M! 點 NL 每打出一次，這張牌的數值永久增加 !theMarked:SecondMagic! 點 NL 虛無 、 消耗",
     "UPGRADE_DESCRIPTION": "themarked:召喚 *艾莉莎之刃 ，增加其傷害 !M! 點 NL 每打出一次，這張牌的數值永久增加 !theMarked:SecondMagic! 點 NL 消耗"
   },
@@ -264,8 +264,8 @@
   },
   "theMarked:Determination": {
     "NAME": "決心",
-    "DESCRIPTION": "給予敵人 themarked:驅逐印記 時，抽 !M! 張牌 NL 每回合1次",
-    "UPGRADE_DESCRIPTION": "給予敵人 themarked:驅逐印記 時，抽 !M! 張牌 NL 每回合2次"
+    "DESCRIPTION": "給予敵人 themarked:驅逐 時，抽 !M! 張牌 NL 每回合1次",
+    "UPGRADE_DESCRIPTION": "給予敵人 themarked:驅逐 時，抽 !M! 張牌 NL 每回合2次"
   },
   "theMarked:ThrowWeapon": {
     "NAME": "投擲武器",
@@ -299,7 +299,7 @@
   },
   "theMarked:BindingBlade": {
     "NAME": "束縛刀刃",
-    "DESCRIPTION": "themarked:召喚 *艾莉莎之刃 NL 使其給予 !M! 層 themarked:驅逐印記 NL 消耗"
+    "DESCRIPTION": "themarked:召喚 *艾莉莎之刃 NL 使其給予 !M! 層 themarked:驅逐 NL 消耗"
   },
   "theMarked:Friction": {
     "NAME": "摩擦起電",
@@ -325,7 +325,7 @@
   },
   "theMarked:MysticalArsenal": {
     "NAME": "神秘武庫",
-    "DESCRIPTION": "一回合內每打出3張攻擊牌，給予所有敵人 !M! 層 themarked:驅逐印記 並獲得等同於敵人 themarked:驅逐印記 總和的 themarked:充能"
+    "DESCRIPTION": "一回合內打出3張攻擊牌，給予所有敵人 !M! 層 themarked:驅逐"
   },
   "theMarked:Electrify": {
     "NAME": "通電",
@@ -343,16 +343,16 @@
   },
   "theMarked:OneWithTheBlade": {
     "NAME": "帶刀之人",
-    "DESCRIPTION": "themarked:召喚 *艾莉莎之刃 NL 賦予其 themarked:維持 NL 獲得 !M! 點 themarked:充能 NL 消耗"
+    "DESCRIPTION": "themarked:召喚 *艾莉莎之刃 NL 賦予其 themarked:良導體 NL 獲得 !M! 點 themarked:充能 NL 消耗"
   },
   "theMarked:Abjuration": {
     "NAME": "驅逐出境",
-    "DESCRIPTION": "造成 !D! 點傷害 NL 給予 !M! 層 themarked:驅逐印記 NL 若目標為 爪牙，再給予 7 層 themarked:驅逐印記",
-    "UPGRADE_DESCRIPTION": "造成 !D! 點傷害 NL 給予 !M! 層 themarked:驅逐印記 NL 若目標為 爪牙，再給予 7 層 themarked:驅逐印記 NL 指向所有 爪牙"
+    "DESCRIPTION": "造成 !D! 點傷害 NL 給予 !M! 層 themarked:驅逐 NL 若目標為 爪牙，再給予 7 層 themarked:驅逐",
+    "UPGRADE_DESCRIPTION": "造成 !D! 點傷害 NL 給予 !M! 層 themarked:驅逐 NL 若目標為 爪牙，再給予 7 層 themarked:驅逐 NL 指向所有 爪牙"
   },
   "theMarked:Vacuum": {
     "NAME": "真空",
-    "DESCRIPTION": "造成 !D! 點傷害 NL 給予等同造成的傷害一半的 themarked:驅逐印記"
+    "DESCRIPTION": "造成 !D! 點傷害 NL 給予等同造成的傷害一半的 themarked:驅逐"
   },
   "theMarked:AttractMetal": {
     "NAME": "吸引金屬",
@@ -370,11 +370,11 @@
   },
   "theMarked:Memento": {
     "NAME": "信物",
-    "DESCRIPTION": "給予 !M! 層 themarked:驅逐印記 NL 抽 !theMarked:SecondMagic! 張牌 NL 消耗"
+    "DESCRIPTION": "給予 !M! 層 themarked:驅逐 NL 抽 !theMarked:SecondMagic! 張牌 NL 消耗"
   },
   "theMarked:TheMission": {
     "NAME": "收到任務",
-    "DESCRIPTION": "獲得 2 層 themarked:愚昧 NL 若你有負面效果，給予 themarked:驅逐印記 時多給予 2 層"
+    "DESCRIPTION": "獲得 2 層 themarked:愚昧 NL 若你有負面效果，給予 themarked:驅逐 時多給予 2 層"
   },
   "theMarked:BiggerThanFate": {
     "NAME": "超越命運",
