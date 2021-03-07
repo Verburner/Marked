@@ -154,7 +154,7 @@
   },
   "theMarked:ShockingTouch": {
     "NAME": "觸電",
-    "DESCRIPTION": "造成 !D! 點傷害 NL 給予自身與目標 !M! 層 易傷"
+    "DESCRIPTION": "造成 !D! 點傷害 NL 給予自身與目標 !M! 層 易傷 themarked:良導體"
   },
   "theMarked:LightningStrikesTwice": {
     "NAME": "完美暴風",
