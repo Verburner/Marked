@@ -18,7 +18,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class RepellingDischarge extends AbstractDynamicCard {
+public class RepellingDischarge extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -31,7 +31,7 @@ public class RepellingDischarge extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(RepellingDischarge.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_RepellingDischarge.png");
-
+    public static final String IMG_beta = makeCardPath("Skill_RepellingDischarge_beta.png");
     // /TEXT DECLARATION/
 
 
@@ -55,6 +55,7 @@ public class RepellingDischarge extends AbstractDynamicCard {
 
     public RepellingDischarge() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseMagicNumber = MAGIC;
         magicNumber = baseMagicNumber;
         baseBlock = magicNumber;

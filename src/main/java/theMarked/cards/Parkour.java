@@ -13,7 +13,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Parkour extends AbstractDynamicCard {
+public class Parkour extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,6 +25,7 @@ public class Parkour extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Parkour.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_Parkour.png");
+    public static final String IMG_beta = makeCardPath("Attack_Parkour_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -50,6 +51,7 @@ public class Parkour extends AbstractDynamicCard {
 
     public Parkour() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
         baseMagicNumber = MAGIC;
         magicNumber = baseMagicNumber;

@@ -11,7 +11,7 @@ import java.util.Iterator;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class HeightenedSenses extends AbstractDynamicCard {
+public class HeightenedSenses extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -24,6 +24,7 @@ public class HeightenedSenses extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(HeightenedSenses.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_HeightenedSenses.png");
+    public static final String IMG_beta = makeCardPath("Skill_HeightenedSenses_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -45,6 +46,7 @@ public class HeightenedSenses extends AbstractDynamicCard {
 
     public HeightenedSenses() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseBlock = BLOCK;
         this.block = baseBlock;
         //Tag your strike, defend and form (Wraith form, Demon form, Echo form, etc.) cards so that they function correctly.

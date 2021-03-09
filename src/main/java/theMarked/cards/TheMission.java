@@ -11,7 +11,7 @@ import theMarked.powers.MissionPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class TheMission extends AbstractDynamicCard {
+public class TheMission extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -23,6 +23,7 @@ public class TheMission extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(TheMission.class.getSimpleName());
     public static final String IMG = makeCardPath("Power_TheMission.png");
+    public static final String IMG_beta = makeCardPath("Power_TheMission_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -41,6 +42,7 @@ public class TheMission extends AbstractDynamicCard {
     public TheMission() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseMagicNumber = MAGIC;
         magicNumber = baseMagicNumber;
 

@@ -18,7 +18,7 @@ import java.util.Iterator;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class ElectricStrings extends AbstractDynamicCard {
+public class ElectricStrings extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -30,6 +30,7 @@ public class ElectricStrings extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(ElectricStrings.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_ElectricStrings.png");
+    public static final String IMG_beta = makeCardPath("Attack_ElectricStrings_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -51,6 +52,7 @@ public class ElectricStrings extends AbstractDynamicCard {
 
     public ElectricStrings() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
     }
 

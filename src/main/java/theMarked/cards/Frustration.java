@@ -11,7 +11,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Frustration extends AbstractDynamicCard {
+public class Frustration extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -23,6 +23,7 @@ public class Frustration extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Frustration.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_Frustration.png");
+    public static final String IMG_beta = makeCardPath("Attack_Frustration_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -44,6 +45,7 @@ public class Frustration extends AbstractDynamicCard {
 
     public Frustration() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
     }
 

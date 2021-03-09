@@ -12,7 +12,7 @@ import theMarked.powers.OpportunistPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Opportunist extends AbstractDynamicCard {
+public class Opportunist extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -24,6 +24,7 @@ public class Opportunist extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Opportunist.class.getSimpleName());
     public static final String IMG = makeCardPath("Power_Opportunist.png");
+    public static final String IMG_beta = makeCardPath("Power_Opportunist_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -44,6 +45,7 @@ public class Opportunist extends AbstractDynamicCard {
     public Opportunist() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.cardsToPreview = new Riposte();
     }
     

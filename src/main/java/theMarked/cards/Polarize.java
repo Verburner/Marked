@@ -12,7 +12,7 @@ import theMarked.powers.ChargePower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Polarize extends AbstractDynamicCard {
+public class Polarize extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,6 +25,7 @@ public class Polarize extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Polarize.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Polarize.png");
+    public static final String IMG_beta = makeCardPath("Skill_Polarize_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -47,6 +48,7 @@ public class Polarize extends AbstractDynamicCard {
     public Polarize() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;
         this.exhaust = true;

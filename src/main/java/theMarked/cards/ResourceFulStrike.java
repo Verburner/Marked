@@ -14,7 +14,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class ResourceFulStrike extends AbstractDynamicCard {
+public class ResourceFulStrike extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -26,6 +26,7 @@ public class ResourceFulStrike extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(ResourceFulStrike.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_ResourcefulStrike.png");
+    public static final String IMG_beta = makeCardPath("Attack_ResourcefulStrike_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -52,6 +53,7 @@ public class ResourceFulStrike extends AbstractDynamicCard {
 
     public ResourceFulStrike() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
         baseMagicNumber = MAGIC;
         magicNumber = baseMagicNumber;

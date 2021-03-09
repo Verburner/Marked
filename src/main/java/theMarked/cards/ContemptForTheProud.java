@@ -14,7 +14,7 @@ import java.util.Iterator;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class ContemptForTheProud extends AbstractDynamicCard {
+public class ContemptForTheProud extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -26,7 +26,7 @@ public class ContemptForTheProud extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(ContemptForTheProud.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_ContemptForTheProud.png");
-
+    public static final String IMG_beta = makeCardPath("Attack_ContemptForTheProud_beta.png");
     // /TEXT DECLARATION/
 
 
@@ -47,6 +47,7 @@ public class ContemptForTheProud extends AbstractDynamicCard {
 
     public ContemptForTheProud() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
     }
 

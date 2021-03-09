@@ -14,7 +14,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Static extends AbstractDynamicCard {
+public class Static extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -27,6 +27,7 @@ public class Static extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Static.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Static.png");
+    public static final String IMG_beta = makeCardPath("Skill_Static_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -48,6 +49,7 @@ public class Static extends AbstractDynamicCard {
 
     public Static() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
         this.cardsToPreview = new Circuit();
         this.baseBlock = BLOCK;

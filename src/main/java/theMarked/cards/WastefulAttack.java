@@ -13,7 +13,7 @@ import theMarked.powers.NextTurnWeak;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class WastefulAttack extends AbstractDynamicCard {
+public class WastefulAttack extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,7 +25,7 @@ public class WastefulAttack extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(WastefulAttack.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_WastefulAttack.png");
-
+    public static final String IMG_beta = makeCardPath("Attack_WastefulAttack_beta.png");
     // /TEXT DECLARATION/
 
 
@@ -46,6 +46,7 @@ public class WastefulAttack extends AbstractDynamicCard {
 
     public WastefulAttack() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
 
         this.tags.add(CardTags.STRIKE);

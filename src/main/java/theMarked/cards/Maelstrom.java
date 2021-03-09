@@ -16,7 +16,7 @@ import theMarked.powers.MaelstromPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Maelstrom extends AbstractDynamicCard {
+public class Maelstrom extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -29,6 +29,7 @@ public class Maelstrom extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Maelstrom.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_MaelstromOfLightning.png");
+    public static final String IMG_beta = makeCardPath("Skill_MaelstromOfLightning_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -52,6 +53,7 @@ public class Maelstrom extends AbstractDynamicCard {
 
     public Maelstrom() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;

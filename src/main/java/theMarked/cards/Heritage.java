@@ -22,6 +22,7 @@ public class Heritage extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Heritage.class.getSimpleName());
     public static final String IMG = makeCardPath("Power_HeritageOfTheMarked.png");
+    public static final String IMG_beta = makeCardPath("Power_HeritageOfTheMarked_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -41,6 +42,7 @@ public class Heritage extends AbstractDynamicCard {
     public Heritage() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseMagicNumber = MAGIC;
         magicNumber = baseMagicNumber;
 

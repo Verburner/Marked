@@ -10,7 +10,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class PowerFlow extends AbstractDynamicCard {
+public class PowerFlow extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -23,6 +23,7 @@ public class PowerFlow extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(PowerFlow.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_PowerFlow.png");
+    public static final String IMG_beta = makeCardPath("Skill_PowerFlow_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -44,7 +45,7 @@ public class PowerFlow extends AbstractDynamicCard {
 
     public PowerFlow() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.cardsToPreview = new Circuit();
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;

@@ -14,7 +14,7 @@ import theMarked.powers.NextTurnDamage;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class LightningStrikesTwice extends AbstractDynamicCard {
+public class LightningStrikesTwice extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -26,6 +26,7 @@ public class LightningStrikesTwice extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(LightningStrikesTwice.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_LightningStrikesTwice.png");
+    public static final String IMG_beta = makeCardPath("Attack_LightningStrikesTwice_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -47,6 +48,7 @@ public class LightningStrikesTwice extends AbstractDynamicCard {
 
     public LightningStrikesTwice() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
     }
 

@@ -13,7 +13,7 @@ import java.util.Iterator;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Indomitable extends AbstractDynamicCard {
+public class Indomitable extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -26,6 +26,7 @@ public class Indomitable extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Indomitable.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Indomitable.png");
+    public static final String IMG_beta = makeCardPath("Skill_Indomitable_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -44,7 +45,9 @@ public class Indomitable extends AbstractDynamicCard {
 
 
     public Indomitable() {
+
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
     }
 
     // Actions the card should do.

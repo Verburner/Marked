@@ -9,7 +9,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class TwofoldDefense extends AbstractDynamicCard {
+public class TwofoldDefense extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -22,6 +22,7 @@ public class TwofoldDefense extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(TwofoldDefense.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_TwofoldDefense.png");
+    public static final String IMG_beta = makeCardPath("Skill_TwofoldDefense_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -43,6 +44,7 @@ public class TwofoldDefense extends AbstractDynamicCard {
 
     public TwofoldDefense() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseBlock = BLOCK;
 
     }

@@ -11,7 +11,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Generate extends AbstractDynamicCard {
+public class Generate extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -24,6 +24,7 @@ public class Generate extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Generate.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Generate.png");
+    public static final String IMG_beta = makeCardPath("Skill_Generate_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -46,6 +47,7 @@ public class Generate extends AbstractDynamicCard {
 
     public Generate() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
     }
 
     // Actions the card should do.

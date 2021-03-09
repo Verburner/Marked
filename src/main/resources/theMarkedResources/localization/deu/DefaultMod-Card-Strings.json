@@ -98,7 +98,7 @@
   },
   "theMarked:ChainLightning": {
     "NAME": "Kettenblitz",
-    "DESCRIPTION": "Verursache !D! Schaden am Ziel und !M! % dieses Schadens an allen anderen Gegnern. NL Leiter. "
+    "DESCRIPTION": "Verursache !D! Schaden am Ziel und !M! % dieses Schadens an allen anderen Gegnern. NL themarked:Leiter. "
   },
   "theMarked:ResourceFulStrike": {
     "NAME": "Findiger Schlag",

@@ -21,7 +21,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import static theMarked.DefaultMod.makeCardPath;
 
 //@AutoAdd.Ignore
-public class ImprovisedWeapon extends AbstractDynamicCard implements CustomSavable<Integer> {
+public class ImprovisedWeapon extends AbstractMarkedCard implements CustomSavable<Integer> {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -33,6 +33,7 @@ public class ImprovisedWeapon extends AbstractDynamicCard implements CustomSavab
 
     public static final String ID = DefaultMod.makeID(ImprovisedWeapon.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_ImprovisedWeapon.png");
+    public static final String IMG_beta = makeCardPath("Attack_ImprovisedWeapon_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESC_0 = cardStrings.EXTENDED_DESCRIPTION[0];
@@ -70,6 +71,7 @@ public class ImprovisedWeapon extends AbstractDynamicCard implements CustomSavab
 
     public ImprovisedWeapon() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
         damage = baseDamage;
         this.baseMagicNumber = MAGIC;

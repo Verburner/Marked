@@ -17,7 +17,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class FavorableWinds extends AbstractDynamicCard {
+public class FavorableWinds extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -30,6 +30,7 @@ public class FavorableWinds extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(FavorableWinds.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Tailwind.png");
+    public static final String IMG_beta = makeCardPath("Skill_Tailwind_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -54,6 +55,7 @@ public class FavorableWinds extends AbstractDynamicCard {
 
     public FavorableWinds() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
         this.baseBlock = BLOCK;
         this.block = baseBlock;

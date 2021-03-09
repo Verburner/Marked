@@ -10,7 +10,7 @@ import theMarked.powers.ComboPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class ComboAttacks extends AbstractDynamicCard {
+public class ComboAttacks extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -22,7 +22,7 @@ public class ComboAttacks extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(ComboAttacks.class.getSimpleName());
     public static final String IMG = makeCardPath("Power_ComboAttacks.png");
-
+    public static final String IMG_beta = makeCardPath("Power_ComboAttacks_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -40,6 +40,7 @@ public class ComboAttacks extends AbstractDynamicCard {
     public ComboAttacks() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
     }
     

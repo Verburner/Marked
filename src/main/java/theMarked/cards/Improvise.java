@@ -10,7 +10,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Improvise extends AbstractDynamicCard {
+public class Improvise extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -22,6 +22,7 @@ public class Improvise extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Improvise.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Improvise.png");
+    public static final String IMG_beta = makeCardPath("Skill_Improvise_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -41,6 +42,7 @@ public class Improvise extends AbstractDynamicCard {
 
     public Improvise() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         ImprovisedWeapon prev = new ImprovisedWeapon();
         prev.effect = 0;
         prev.initializeDescription();

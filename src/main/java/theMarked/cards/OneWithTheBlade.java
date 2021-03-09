@@ -21,7 +21,7 @@ import theMarked.powers.ChargePower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class OneWithTheBlade extends AbstractDynamicCard {
+public class OneWithTheBlade extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -34,6 +34,7 @@ public class OneWithTheBlade extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(OneWithTheBlade.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_ElementalWeapon.png");
+    public static final String IMG_beta = makeCardPath("Skill_ElementalWeapon_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -55,6 +56,7 @@ public class OneWithTheBlade extends AbstractDynamicCard {
 
     public OneWithTheBlade() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
         this.cardsToPreview = new AlyssasBlade();
         this.baseMagicNumber = MAGIC;

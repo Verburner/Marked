@@ -8,7 +8,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Electrify extends AbstractDynamicCard {
+public class Electrify extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -21,6 +21,7 @@ public class Electrify extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Electrify.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Electrify.png");
+    public static final String IMG_beta = makeCardPath("Skill_Electrify_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -42,6 +43,7 @@ public class Electrify extends AbstractDynamicCard {
 
     public Electrify() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;
         this.cardsToPreview = new Circuit();

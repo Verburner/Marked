@@ -16,7 +16,7 @@ import theMarked.powers.IgnorantPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class TunnelVision extends AbstractDynamicCard {
+public class TunnelVision extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -28,6 +28,7 @@ public class TunnelVision extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(TunnelVision.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_TunnelVision.png");
+    public static final String IMG_beta = makeCardPath("Attack_TunnelVision_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -49,6 +50,7 @@ public class TunnelVision extends AbstractDynamicCard {
 
     public TunnelVision() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
         baseMagicNumber = MAGIC;
         magicNumber = baseMagicNumber;

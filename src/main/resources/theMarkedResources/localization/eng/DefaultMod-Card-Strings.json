@@ -98,7 +98,7 @@
   },
   "theMarked:ChainLightning": {
     "NAME": "Chain Lightning",
-    "DESCRIPTION": "Deal !D! damage to a target and !M! % of this damage to other enemies. NL Conductor. "
+    "DESCRIPTION": "Deal !D! damage to a target and !M! % of this damage to other enemies. NL themarked:Conductor. "
   },
   "theMarked:ResourceFulStrike": {
     "NAME": "Resourceful Strike",

@@ -11,7 +11,7 @@ import theMarked.powers.StandoffPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Standoff extends AbstractDynamicCard {
+public class Standoff extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -23,6 +23,7 @@ public class Standoff extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Standoff.class.getSimpleName());
     public static final String IMG = makeCardPath("Power_Standoff.png");
+    public static final String IMG_beta = makeCardPath("Power_Standoff_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -42,6 +43,7 @@ public class Standoff extends AbstractDynamicCard {
     public Standoff() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseMagicNumber = MAGIC;
         magicNumber = baseMagicNumber;
 

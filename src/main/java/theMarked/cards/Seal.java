@@ -15,7 +15,7 @@ import theMarked.powers.BanishPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Seal extends AbstractDynamicCard {
+public class Seal extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -28,6 +28,7 @@ public class Seal extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Seal.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Seal.png");
+    public static final String IMG_beta = makeCardPath("Skill_Seal_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -49,7 +50,7 @@ public class Seal extends AbstractDynamicCard {
 
     public Seal() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseMagicNumber = MAGIC_NUMBER;
         this.magicNumber = baseMagicNumber;
     }

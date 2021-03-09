@@ -512,7 +512,7 @@ public class DefaultMod implements
 
     public static void loadJokeCardImage(AbstractCard card, String img) {
         if (card instanceof AbstractMarkedCard) {
-            ((AbstractMarkedCard) card).betaArtPath = img;
+            ((AbstractMarkedCard) card).IMG_beta = img;
         }
         Texture cardTexture;
         cardTexture = TextureLoader.getTexture(img);

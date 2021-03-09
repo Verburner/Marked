@@ -10,7 +10,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Vacuum extends AbstractDynamicCard {
+public class Vacuum extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -22,6 +22,7 @@ public class Vacuum extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Vacuum.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_Vacuum.png");
+    public static final String IMG_beta = makeCardPath("Attack_Vacuum.png");
 
     // /TEXT DECLARATION/
 
@@ -43,6 +44,7 @@ public class Vacuum extends AbstractDynamicCard {
 
     public Vacuum() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
     }
 

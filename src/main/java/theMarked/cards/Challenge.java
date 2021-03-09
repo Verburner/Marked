@@ -12,7 +12,7 @@ import theMarked.powers.ChallengedPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Challenge extends AbstractDynamicCard {
+public class Challenge extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,6 +25,7 @@ public class Challenge extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Challenge.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Challenge.png");
+    public static final String IMG_beta = makeCardPath("Skill_Challenge_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -46,6 +47,7 @@ public class Challenge extends AbstractDynamicCard {
 
     public Challenge() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
         this.baseMagicNumber = MAGIC_NUMBER;
         this.magicNumber = baseMagicNumber;

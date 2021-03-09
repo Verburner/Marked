@@ -14,7 +14,7 @@ import theMarked.powers.MuscleMemoryPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class MuscleMemory extends AbstractDynamicCard {
+public class MuscleMemory extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -26,6 +26,7 @@ public class MuscleMemory extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(MuscleMemory.class.getSimpleName());
     public static final String IMG = makeCardPath("Power_MuscleMemory.png");
+    public static final String IMG_beta = makeCardPath("Power_MuscleMemory_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -49,6 +50,7 @@ public class MuscleMemory extends AbstractDynamicCard {
     public MuscleMemory() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;
     }

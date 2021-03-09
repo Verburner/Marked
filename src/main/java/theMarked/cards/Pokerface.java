@@ -12,7 +12,7 @@ import java.util.Iterator;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Pokerface extends AbstractDynamicCard {
+public class Pokerface extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,6 +25,7 @@ public class Pokerface extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Pokerface.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_WastefulDefense.png");
+    public static final String IMG_beta = makeCardPath("Skill_WastefulDefense_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -46,7 +47,7 @@ public class Pokerface extends AbstractDynamicCard {
 
     public Pokerface() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseBlock = BLOCK;
         this.block = baseBlock;
     }

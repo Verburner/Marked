@@ -18,7 +18,7 @@ import theMarked.powers.BanishPower;
 import static theMarked.DefaultMod.makeCardPath;
 
 @AutoAdd.Ignore
-public class MirrorBlade extends AbstractDynamicCard {
+public class MirrorBlade extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -29,7 +29,8 @@ public class MirrorBlade extends AbstractDynamicCard {
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(MirrorBlade.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack_MirrorBlade.png");
+    public static final String IMG = makeCardPath("Attack_AlyssasBlade.png");
+    public static final String IMG_beta = makeCardPath("Attack_MirrorBlade.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION_PLUS1 = cardStrings.EXTENDED_DESCRIPTION[0];
@@ -56,6 +57,7 @@ public class MirrorBlade extends AbstractDynamicCard {
 
     public MirrorBlade() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
         baseMagicNumber = 0;
         defaultBaseSecondMagicNumber = 0;

@@ -9,7 +9,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Friction extends AbstractDynamicCard {
+public class Friction extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -22,6 +22,7 @@ public class Friction extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Friction.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_ReduceFriction.png");
+    public static final String IMG_beta = makeCardPath("Skill_ReduceFriction_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -43,6 +44,7 @@ public class Friction extends AbstractDynamicCard {
 
     public Friction() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;
     }

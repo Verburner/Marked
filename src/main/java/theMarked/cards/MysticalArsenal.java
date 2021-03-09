@@ -13,7 +13,7 @@ import theMarked.powers.MysticalPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class MysticalArsenal extends AbstractDynamicCard {
+public class MysticalArsenal extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,6 +25,7 @@ public class MysticalArsenal extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(MysticalArsenal.class.getSimpleName());
     public static final String IMG = makeCardPath("Power_MysticalArsenal.png");
+    public static final String IMG_beta = makeCardPath("Power_MysticalArsenal_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -45,6 +46,7 @@ public class MysticalArsenal extends AbstractDynamicCard {
     public MysticalArsenal() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;
     }

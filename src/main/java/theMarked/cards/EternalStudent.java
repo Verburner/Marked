@@ -20,7 +20,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class EternalStudent extends AbstractDynamicCard implements CustomSavable<Integer> {
+public class EternalStudent extends AbstractMarkedCard implements CustomSavable<Integer> {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -33,6 +33,7 @@ public class EternalStudent extends AbstractDynamicCard implements CustomSavable
 
     public static final String ID = DefaultMod.makeID(EternalStudent.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_EternalStudent.png");
+    public static final String IMG_beta = makeCardPath("Skill_EternalStudent_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -57,6 +58,7 @@ public class EternalStudent extends AbstractDynamicCard implements CustomSavable
 
     public EternalStudent() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
         this.cardsToPreview = new AlyssasBlade();
         this.misc = MAGIC2;

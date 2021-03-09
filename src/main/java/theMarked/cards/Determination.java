@@ -12,7 +12,7 @@ import theMarked.powers.DeterminationPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Determination extends AbstractDynamicCard {
+public class Determination extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -23,7 +23,8 @@ public class Determination extends AbstractDynamicCard {
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(Determination.class.getSimpleName());
-    public static final String IMG = makeCardPath("Power_DeterminationOfTheMarked.png");
+    public static final String IMG = makeCardPath("Power_Determination.png");
+    public static final String IMG_beta = makeCardPath("Power_Determination_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -46,6 +47,7 @@ public class Determination extends AbstractDynamicCard {
     public Determination() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseMagicNumber = MAGIC;
         magicNumber = baseMagicNumber;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber;

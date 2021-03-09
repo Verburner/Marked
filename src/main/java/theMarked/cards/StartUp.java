@@ -14,7 +14,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class StartUp extends AbstractDynamicCard {
+public class StartUp extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -26,6 +26,7 @@ public class StartUp extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(StartUp.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_StartUp.png");
+    public static final String IMG_beta = makeCardPath("Attack_StartUp_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -47,6 +48,7 @@ public class StartUp extends AbstractDynamicCard {
 
     public StartUp() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;

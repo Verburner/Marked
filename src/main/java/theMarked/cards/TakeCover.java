@@ -14,7 +14,7 @@ import theMarked.powers.IgnorantPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class TakeCover extends AbstractDynamicCard {
+public class TakeCover extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -27,6 +27,7 @@ public class TakeCover extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(TakeCover.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_TakeCover.png");
+    public static final String IMG_beta = makeCardPath("Skill_TakeCover_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -48,6 +49,7 @@ public class TakeCover extends AbstractDynamicCard {
 
     public TakeCover() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
         this.magicNumber = baseMagicNumber;
         this.baseBlock = BLOCK;

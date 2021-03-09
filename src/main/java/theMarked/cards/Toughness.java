@@ -10,7 +10,7 @@ import theMarked.powers.SummonPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Toughness extends AbstractDynamicCard {
+public class Toughness extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -22,6 +22,7 @@ public class Toughness extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Toughness.class.getSimpleName());
     public static final String IMG = makeCardPath("Power_SummonStrength.png");
+    public static final String IMG_beta = makeCardPath("Power_SummonStrength_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -41,6 +42,7 @@ public class Toughness extends AbstractDynamicCard {
     public Toughness() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;
     }

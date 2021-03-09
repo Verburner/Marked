@@ -11,7 +11,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class GodGivenPower extends AbstractDynamicCard {
+public class GodGivenPower extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -23,6 +23,7 @@ public class GodGivenPower extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(GodGivenPower.class.getSimpleName());
     public static final String IMG = makeCardPath("Power_GodGivenPower.png");
+    public static final String IMG_beta = makeCardPath("Power_GodGivenPower_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -43,6 +44,7 @@ public class GodGivenPower extends AbstractDynamicCard {
     public GodGivenPower() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.cardsToPreview = new Circuit();
     }
     

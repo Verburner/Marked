@@ -10,7 +10,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Overthink extends AbstractDynamicCard {
+public class Overthink extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -23,6 +23,7 @@ public class Overthink extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Overthink.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Overthink.png");
+    public static final String IMG_beta = makeCardPath("Skill_Overthink_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -44,6 +45,7 @@ public class Overthink extends AbstractDynamicCard {
     public Overthink() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;
     }

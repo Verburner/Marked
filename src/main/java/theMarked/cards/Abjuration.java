@@ -67,22 +67,6 @@ public class Abjuration extends AbstractMarkedCard {
         magicNumber = MAGIC_NUMBER;
     }
 
-    public void loadBetaImage(String img) {
-        Texture cardTexture;
-        if (imgMap.containsKey(img)) {
-            cardTexture = (Texture)imgMap.get(img);
-        } else {
-            cardTexture = ImageMaster.loadImage(img);
-            imgMap.put(img, cardTexture);
-        }
-
-        cardTexture.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
-        int tw = cardTexture.getWidth();
-        int th = cardTexture.getHeight();
-        TextureAtlas.AtlasRegion cardImg = new TextureAtlas.AtlasRegion(cardTexture, 0, 0, tw, th);
-        ReflectionHacks.setPrivateInherited(this, CustomCard.class, "jokePortrait", cardImg);
-    }
-
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -13,7 +13,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Convert extends AbstractDynamicCard {
+public class Convert extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -26,6 +26,7 @@ public class Convert extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Convert.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_Convert.png");
+    public static final String IMG_beta = makeCardPath("Skill_Convert_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -47,6 +48,7 @@ public class Convert extends AbstractDynamicCard {
 
     public Convert() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
     }
 

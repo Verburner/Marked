@@ -15,7 +15,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class ChannelForce extends AbstractDynamicCard {
+public class ChannelForce extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -28,7 +28,7 @@ public class ChannelForce extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(ChannelForce.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_ChannelForce.png");
-
+    public static final String IMG_beta = makeCardPath("Skill_ChannelForce_beta.png");
     // /TEXT DECLARATION/
 
 
@@ -49,6 +49,7 @@ public class ChannelForce extends AbstractDynamicCard {
 
     public ChannelForce() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
         this.cardsToPreview = new AlyssasBlade();
         this.baseMagicNumber = MAGIC;

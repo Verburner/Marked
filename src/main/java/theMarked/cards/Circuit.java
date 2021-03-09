@@ -10,7 +10,7 @@ import theMarked.DefaultMod;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Circuit extends AbstractDynamicCard {
+public class Circuit extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -22,6 +22,7 @@ public class Circuit extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Circuit.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_Circuit.png");
+    public static final String IMG_beta = makeCardPath("Attack_Circuit_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -43,6 +44,7 @@ public class Circuit extends AbstractDynamicCard {
 
     public Circuit() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
         this.exhaust = true;
     }

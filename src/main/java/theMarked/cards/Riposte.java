@@ -12,7 +12,7 @@ import theMarked.DefaultMod;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class Riposte extends AbstractDynamicCard {
+public class Riposte extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -24,6 +24,7 @@ public class Riposte extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Riposte.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_Riposte.png");
+    public static final String IMG_beta = makeCardPath("Attack_Riposte_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -45,6 +46,7 @@ public class Riposte extends AbstractDynamicCard {
 
     public Riposte() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
         this.exhaust = true;
         this.isEthereal = true;

@@ -16,7 +16,7 @@ import java.util.Iterator;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class UnarmedFury extends AbstractDynamicCard {
+public class UnarmedFury extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -28,6 +28,7 @@ public class UnarmedFury extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(UnarmedFury.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_UnarmedFury.png");
+    public static final String IMG_beta = makeCardPath("Attack_UnarmedFury_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION[0];
@@ -51,6 +52,7 @@ public class UnarmedFury extends AbstractDynamicCard {
 
     public UnarmedFury() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseDamage = DAMAGE;
     }
 

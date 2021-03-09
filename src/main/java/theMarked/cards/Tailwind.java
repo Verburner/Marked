@@ -13,7 +13,7 @@ import theMarked.DefaultMod;
 import static theMarked.DefaultMod.makeCardPath;
 
 
-public class Tailwind extends AbstractDynamicCard {
+public class Tailwind extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -26,6 +26,7 @@ public class Tailwind extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(Tailwind.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_FavorableWinds.png");
+    public static final String IMG_beta = makeCardPath("Skill_FavorableWinds_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -47,6 +48,7 @@ public class Tailwind extends AbstractDynamicCard {
     public Tailwind() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseMagicNumber = MAGIC;
         this.magicNumber = baseMagicNumber;
         this.exhaust = true;

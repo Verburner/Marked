@@ -10,7 +10,7 @@ import theMarked.powers.AdeptPower;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class MagusForm extends AbstractDynamicCard {
+public class MagusForm extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -22,6 +22,7 @@ public class MagusForm extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(MagusForm.class.getSimpleName());
     public static final String IMG = makeCardPath("Power_MagicAdept.png");
+    public static final String IMG_beta = makeCardPath("Power_MagicAdept_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -41,6 +42,7 @@ public class MagusForm extends AbstractDynamicCard {
     public MagusForm() {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         baseMagicNumber = MAGIC;
         magicNumber = baseMagicNumber;
 

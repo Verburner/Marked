@@ -17,7 +17,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class ParalyzingBlade extends AbstractDynamicCard {
+public class ParalyzingBlade extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -30,6 +30,7 @@ public class ParalyzingBlade extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(ParalyzingBlade.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_ParalyzingBlade.png");
+    public static final String IMG_beta = makeCardPath("Skill_ParalyzingBlade_beta.png");
 
     // /TEXT DECLARATION/
 
@@ -51,7 +52,7 @@ public class ParalyzingBlade extends AbstractDynamicCard {
 
     public ParalyzingBlade() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.cardsToPreview = new AlyssasBlade();
         this.baseBlock = BLOCK;
         this.block = baseBlock;

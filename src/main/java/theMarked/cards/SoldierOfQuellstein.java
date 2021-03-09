@@ -12,7 +12,7 @@ import theMarked.characters.TheMarked;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class SoldierOfQuellstein extends AbstractDynamicCard {
+public class SoldierOfQuellstein extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,7 +25,7 @@ public class SoldierOfQuellstein extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(SoldierOfQuellstein.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill_SoldierOfQuellstein.png");
-
+    public static final String IMG_beta = makeCardPath("Skill_SoldierOfQuellstein_beta.png");
     // /TEXT DECLARATION/
 
 
@@ -45,6 +45,7 @@ public class SoldierOfQuellstein extends AbstractDynamicCard {
 
     public SoldierOfQuellstein() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
 
         this.cardsToPreview = new AlyssasBlade();
         this.baseBlock = BLOCK;

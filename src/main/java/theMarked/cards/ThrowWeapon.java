@@ -15,7 +15,7 @@ import java.util.Iterator;
 
 import static theMarked.DefaultMod.makeCardPath;
 
-public class ThrowWeapon extends AbstractDynamicCard {
+public class ThrowWeapon extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -27,6 +27,7 @@ public class ThrowWeapon extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(ThrowWeapon.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack_ThrowWeapon.png");
+    public static final String IMG_beta = makeCardPath("Attack_ThrowWeapon_beta.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -49,6 +50,7 @@ public class ThrowWeapon extends AbstractDynamicCard {
 
     public ThrowWeapon() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        DefaultMod.loadJokeCardImage(this,IMG_beta);
         this.baseDamage = 0;
     }
 
