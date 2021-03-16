@@ -44,7 +44,7 @@ public class ElectrifyAction extends AbstractGameAction {
                 for (AbstractCard c : p.hand.group) {
                     if (c.type == AbstractCard.CardType.ATTACK) {
                         this.addToBot(new ExhaustSpecificCardAction(c, p.hand));
-                        this.addToBot(new MakeTempCardInHandAction(new Circuit(), amount, true));
+                        AbstractDungeon.actionManager.addToBottom(new SummonCircuitAction(new Circuit(), 0,amount, false));
                         this.isDone = true;
                         return;
                     }
@@ -72,7 +72,7 @@ public class ElectrifyAction extends AbstractGameAction {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
                 if (c.type == AbstractCard.CardType.ATTACK) {
                     this.addToTop(new ExhaustSpecificCardAction(c, AbstractDungeon.handCardSelectScreen.selectedCards));
-                    this.addToBot(new MakeTempCardInHandAction(new Circuit(), amount, true));
+                    AbstractDungeon.actionManager.addToBottom(new SummonCircuitAction(new Circuit(), 0,amount, false));
                 }
             }
             this.returnCards();

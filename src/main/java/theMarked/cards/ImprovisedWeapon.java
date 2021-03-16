@@ -21,7 +21,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import static theMarked.DefaultMod.makeCardPath;
 
 //@AutoAdd.Ignore
-public class ImprovisedWeapon extends AbstractMarkedCard implements CustomSavable<Integer> {
+public class ImprovisedWeapon extends AbstractMarkedCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -78,7 +78,7 @@ public class ImprovisedWeapon extends AbstractMarkedCard implements CustomSavabl
         this.magicNumber = baseMagicNumber;
         this.exhaust = true;
 
-        if(AbstractDungeon.player != null){
+        if(AbstractDungeon.player != null && AbstractDungeon.cardRng != null){
             effect = AbstractDungeon.cardRng.random(1,4);
         }else {
             effect = 0;
@@ -134,15 +134,5 @@ public class ImprovisedWeapon extends AbstractMarkedCard implements CustomSavabl
             upgradeDamage(UPGRADE_PLUS_DMG);
             initializeDescription();
         }
-    }
-
-    @Override
-    public Integer onSave() {
-        return effect;
-    }
-
-    @Override
-    public void onLoad(Integer savedEffect) {
-        this.effect = savedEffect;
     }
 }

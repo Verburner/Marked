@@ -1,7 +1,7 @@
 {
   "theMarked:ElectrifyAction": {
     "TEXT": [
-     "选择一张攻击牌消耗"
+     "消耗"
     ]
   },
   "theMarked:ThrowWeaponAction": {

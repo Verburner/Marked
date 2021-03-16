@@ -52,6 +52,7 @@ public class Electrify extends AbstractMarkedCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+
         this.addToBot(new ElectrifyAction(magicNumber));
     }
 

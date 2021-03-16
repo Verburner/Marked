@@ -85,8 +85,6 @@ public class SummonImprovAction extends AbstractGameAction{
                 ((ImprovisedWeapon)x).effect = ThreadLocalRandom.current().nextInt(1, 5);
                 x.initializeDescription();
                 if (upgraded) x.upgrade();
-                AbstractDungeon.actionManager.addToBottom(
-                        new ApplyPowerAction(pl, pl, new ChargePower(pl, pl, amount), amount));
             }
 
             if (AbstractDungeon.player.hasPower(RogueSparksPower.POWER_ID)) {

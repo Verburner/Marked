@@ -162,7 +162,7 @@
   },
   "theMarked:TunnelVision": {
     "NAME": "Tunnelblick",
-    "DESCRIPTION": "Verursache !D! Schaden drei mal. NL Werde themarked:Ignorant für !M! Runden. "
+    "DESCRIPTION": "Verursache !D! Schaden zwei Mal. NL Werde themarked:Ignorant für !M! Runden. "
   },
   "theMarked:Parkour": {
     "NAME": "Parkour",
@@ -306,8 +306,8 @@
   },
   "theMarked:GodGivenPower": {
     "NAME": "Gottgegebene Macht",
-    "DESCRIPTION": "Zu Beginn deiner Runde, erzeuge einen *Stromkreis in deiner Hand. ",
-    "UPGRADE_DESCRIPTION": "Zu Beginn deiner Runde, erzeuge einen *Stromkreis in deiner Hand. NL Angeboren."
+    "DESCRIPTION": "Zu Beginn deiner Runde, themarked:beschwöre einen *Stromkreis. ",
+    "UPGRADE_DESCRIPTION": "Zu Beginn deiner Runde, themarked:beschwöre einen *Stromkreis. NL Angeboren."
   },
   "theMarked:Opportunist": {
     "NAME": "Opportunist",
@@ -328,7 +328,7 @@
   },
   "theMarked:Electrify": {
     "NAME": "Elektrisch machen",
-    "DESCRIPTION": "Erschöpfe einen Angriff und ersetze ihn durch !M! *Stromkreise. "
+    "DESCRIPTION": "Erschöpfe einen Angriff. NL themarked:Beschwöre !M! *Stromkreise. "
   },
   "theMarked:TurnInvisible": {
     "NAME": "Unsichtbar machen",

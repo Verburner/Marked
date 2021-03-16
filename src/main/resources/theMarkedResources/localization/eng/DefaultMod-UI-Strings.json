@@ -1,7 +1,7 @@
 {
   "theMarked:ElectrifyAction": {
     "TEXT": [
-     "Select an Attack to exhaust."
+     "exhaust."
     ]
   },
   "theMarked:ThrowWeaponAction": {

@@ -44,7 +44,7 @@ public class BanishingWave extends AbstractMarkedCard {
     public static final CardColor COLOR = TheMarked.Enums.MARKED_GENTA;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 16;
+    private static final int DAMAGE = 15;
     private static final int MAGIC_NUMBER = 4;
     private static final int UPGRADE_PLUS_DMG = 1;
 

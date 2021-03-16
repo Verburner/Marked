@@ -1,12 +1,12 @@
 {
   "theMarked:ElectrifyAction": {
     "TEXT": [
-     "Select an Attack to exhaust."
+     "Erschöpfen."
     ]
   },
   "theMarked:ThrowWeaponAction": {
     "TEXT": [
-      "exhaust."
+      "Erschöpfen."
     ]
   }
 }

@@ -24,7 +24,7 @@ public class EyepatchAction extends AbstractGameAction{
 
         for (AbstractPower pow : p.powers)
         {
-            if (pow.type == AbstractPower.PowerType.DEBUFF && pow.amount > 0) {
+            if (pow.type == AbstractPower.PowerType.DEBUFF) {
                 eneToGain=1;
             }
         }

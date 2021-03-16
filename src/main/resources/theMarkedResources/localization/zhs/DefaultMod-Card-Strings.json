@@ -162,7 +162,7 @@
   },
   "theMarked:TunnelVision": {
     "NAME": "以管窥天",
-    "DESCRIPTION": "造成 !D! 点伤害三次。 NL 获得 !M! 层 themarked:愚蠢 。"
+    "DESCRIPTION": "造成 !D! 点伤害兩次。 NL 获得 !M! 层 themarked:愚蠢 。"
   },
   "theMarked:Parkour": {
     "NAME": "跑酷",
@@ -306,8 +306,8 @@
   },
   "theMarked:GodGivenPower": {
     "NAME": "神力",
-    "DESCRIPTION": "在你的回合开始时，将 1 张 *回路 加入手牌。",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 在你的回合开始时，将 1 张 *回路 加入手牌。"
+    "DESCRIPTION": "在你的回合开始时， themarked:召唤 1 张 *回路 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 在你的回合开始时， themarked:召唤 1 张 *回路 。"
   },
   "theMarked:Opportunist": {
     "NAME": "机会主义者",
@@ -328,7 +328,7 @@
   },
   "theMarked:Electrify": {
     "NAME": "通电",
-    "DESCRIPTION": "消耗 1 张攻击牌。 NL 将 !M! 张 *回路 加入手牌。"
+    "DESCRIPTION": "消耗 1 张攻击牌。 NL themarked:召唤 !M! 张 *回路 。"
   },
   "theMarked:TurnInvisible": {
     "NAME": "隐形",

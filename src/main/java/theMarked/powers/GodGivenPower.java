@@ -6,9 +6,11 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theMarked.DefaultMod;
+import theMarked.actions.SummonCircuitAction;
 import theMarked.cards.Circuit;
 import theMarked.cards.Electrocute;
 import theMarked.util.TextureLoader;
@@ -51,7 +53,7 @@ public class GodGivenPower extends AbstractPower implements CloneablePowerInterf
     // On use card, apply (amount) of Dexterity. (Go to the actual power card for the amount.)
     public void atStartOfTurn() {
         this.flash();
-        this.addToBot(new MakeTempCardInHandAction(new Circuit(),this.amount));
+        AbstractDungeon.actionManager.addToBottom(new SummonCircuitAction(new Circuit(), 0,1, false));
     }
 
     @Override

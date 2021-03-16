@@ -125,7 +125,8 @@ public class OneWithTheBlade extends AbstractMarkedCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            //upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            upgradeBaseCost(0);
             initializeDescription();
         }
     }

@@ -55,7 +55,7 @@ public class PowerFlow extends AbstractMarkedCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractCard charge = this.cardsToPreview;
-        AbstractDungeon.actionManager.addToBottom(new SummonCircuitAction(charge, magicNumber, upgraded));
+        AbstractDungeon.actionManager.addToBottom(new SummonCircuitAction(charge, magicNumber, 1, upgraded));
     }
 
     //Upgraded stats.

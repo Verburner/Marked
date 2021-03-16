@@ -162,7 +162,7 @@
   },
   "theMarked:TunnelVision": {
     "NAME": "Tunnel Vision",
-    "DESCRIPTION": "Deal !D! damage three times. NL Become themarked:Ignorant for !M! turns. "
+    "DESCRIPTION": "Deal !D! damage twice. NL Become themarked:Ignorant for !M! turns. "
   },
   "theMarked:Parkour": {
     "NAME": "Parkour",
@@ -306,8 +306,8 @@
   },
   "theMarked:GodGivenPower": {
     "NAME": "God-given Power",
-    "DESCRIPTION": "At the start of your turn, add a *Circuit into your hand. ",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, add a *Circuit into your hand. NL Innate."
+    "DESCRIPTION": "At the start of your turn, themarked:summon a *Circuit. ",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, themarked:summon a *Circuit. NL Innate."
   },
   "theMarked:Opportunist": {
     "NAME": "Opportunist",
@@ -328,7 +328,7 @@
   },
   "theMarked:Electrify": {
     "NAME": "Electrify",
-    "DESCRIPTION": "Exhaust an attack in your hand and replace it with !M! *Circuit. "
+    "DESCRIPTION": "Exhaust an attack in your hand. NL  themarked:Summon !M! *Circuit. "
   },
   "theMarked:TurnInvisible": {
     "NAME": "Turn Invisible",

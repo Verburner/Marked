@@ -41,9 +41,9 @@ public class TunnelVision extends AbstractMarkedCard {
     public static final CardColor COLOR = TheMarked.Enums.MARKED_GENTA;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 5;
-    private static final int UPGRADE_PLUS_DMG = 1;
-    private static final int MAGIC = 3;
+    private static final int DAMAGE = 7;
+    private static final int UPGRADE_PLUS_DMG = 2;
+    private static final int MAGIC = 2;
     private static final int UPGRADE_PLUS_MAGIC = -1;
 
     // /STAT DECLARATION/
@@ -66,9 +66,6 @@ public class TunnelVision extends AbstractMarkedCard {
             AbstractDungeon.actionManager.addToBottom(
                     new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
                             AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-            AbstractDungeon.actionManager.addToBottom(
-                    new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
-                            AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p,new IgnorantPower(p,p,magicNumber),magicNumber));
     }
 
@@ -78,7 +75,7 @@ public class TunnelVision extends AbstractMarkedCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
+            //upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
             initializeDescription();
         }
     }

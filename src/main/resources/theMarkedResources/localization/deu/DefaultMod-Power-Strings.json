@@ -69,7 +69,7 @@
   },
   "theMarked:GodGivenPower": {
     "NAME": "Gottgegebene Macht",
-    "DESCRIPTIONS": ["Am Anfang deiner Runde, erzeuge ", " Stromkrei in deiner Hand."]
+    "DESCRIPTIONS": ["Am Anfang deiner Runde, #ybeschwöre #b", " Stromkreis in deiner Hand. "]
   },
   "theMarked:MysticalPower": {
     "NAME": "Mystisches Arsenal",
@@ -89,7 +89,7 @@
   },
   "theMarked:MissionPower": {
     "NAME": "Die Mission",
-    "DESCRIPTIONS": ["Wenn du einen negativen Effekt hast und themarked:Verbannen anwendest, wende ", " mehr an."]
+    "DESCRIPTIONS": ["Wenn du einen negativen Effekt hast und Verbannen anwendest, wende ", " mehr an."]
   },
   "theMarked:MuscleMemoryPower": {
     "NAME": "Muscle Memory",

@@ -69,7 +69,7 @@
   },
   "theMarked:GodGivenPower": {
     "NAME": "God Given Power",
-    "DESCRIPTIONS": ["At the start of your turn, add #b", " #yCircuit into your hand."]
+    "DESCRIPTIONS": ["At the start of your turn, #ysummon #b", " #yCircuit."]
   },
   "theMarked:MysticalPower": {
     "NAME": "Mystical Arsenal",

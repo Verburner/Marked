@@ -69,7 +69,7 @@
   },
   "theMarked:GodGivenPower": {
     "NAME": "神力",
-    "DESCRIPTIONS": ["回合開始時，將 #b", " 張迴路放到手牌"]
+    "DESCRIPTIONS": ["回合開始時，themarked:召喚 #b", " 張迴路"]
   },
   "theMarked:MysticalPower": {
     "NAME": "神秘武庫",
